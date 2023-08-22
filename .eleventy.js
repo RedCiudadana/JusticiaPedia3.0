@@ -7,8 +7,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('css');
     eleventyConfig.addPassthroughCopy('js');
     eleventyConfig.addPassthroughCopy('elementos');
-    eleventyConfig.addPassthroughCopy('images');
-    eleventyConfig.addPassthroughCopy('src');
     eleventyConfig.addPassthroughCopy('admin');
 
     eleventyConfig.addNunjucksFilter("rmj", function(content) {
