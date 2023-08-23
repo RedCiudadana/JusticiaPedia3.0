@@ -10119,7 +10119,7 @@ td.actions {
   -o-transition: .3s;
   transition: .3s;
   vertical-align: middle;
-  background: #E86762;
+  background: #e1a992;
   border-radius: 5px;
   border: none; }
   .btn i {
@@ -10131,14 +10131,14 @@ td.actions {
   color: white!important; }
 
 .btn::before {
-  background: #46495F ;
+  background: #e1a992 ;
   bottom: 0;
   content: "";
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
-  border: 1px solid #46495F ;
+  border: 1px solid #e1a992 ;
   -webkit-transform: scaleY(0);
   -ms-transform: scaleY(0);
   transform: scaleY(0);
@@ -19922,4 +19922,38 @@ label.checkbox {
 .linea{
   height: 2px;
   border-bottom: 1px solid #fff;
+}
+
+.titulo_slider{
+  color: #fff!important;
+  font-size: 30px;
+  margin: 5px;
+}
+
+.texto_slider{
+  color: #fff!important;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 5px;
+}
+
+.imagen_slider{
+  width: 100px;
+  height: auto;
+  margin: 10px auto;
+}
+
+.cuadro_pre_especiales{
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px 30px;
+}
+
+.titulo_pre_especiales{
+  font-size: 20px;
+}
+
+.texto_pre_especiales{
+  font-size: 15px;
+  line-height: 18px;
 }
