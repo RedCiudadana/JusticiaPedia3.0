@@ -1,0 +1,69 @@
+---
+pagination:
+  data: sectorjusticia
+  size: 1
+  alias: sectorjusticia
+  addAllPagesToCollections: true
+permalink: "sectorjusticia/{{sectorjusticia.nombre}}/index.html"
+tags:
+  - sectorjusticia
+---
+
+
+{% extends "src/base.njk" %}
+
+{% block head %}
+<title>{{sectorjusticia.nombre}} | JusticiaPedia</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block content %}
+
+    <section id="content px-4">
+			<div class="content-wrap">
+
+				<!-- Contenido
+				============================================= -->
+
+				<div class="section m-0 py-6" style="background-color: #f1f4fa">
+					<div class="container">
+						<div class="row">
+
+              <div class="col-lg-12 my-4 py-4 px-4 background-perfiles">
+                <a href="/index.html" style="font-weight:600">Inicio</a> / <a href="/sectorjusticia/index.html" style="font-weight:600">Sector Justucia</a> / <a href="" style="pointer-events:none;font-weight:600">{{sectorjusticia.nombre}}</a>
+              </div>
+
+              <div class="col-lg-12 my-4 p-0 background-perfiles">
+                <a href="/index.html" class="btn btn3" style="font-weight:600"><img src="">Institución</a>
+              </div>
+
+              <div class="col-lg-12 my-4 py-4 background-perfiles">
+                <div class="row">
+                  <div class="col-lg-4"><img src="{{sectorjusticia.fotoURL}}"></div>
+
+                  <div class="col-lg-4 px-4">
+                    <h1 class="titulo_cuadros">{{sectorjusticia.nombre}}</h1>
+                    <p class="subtitulo_cuadros">Horario de Atención: {{sectorjusticia.horario}}</p>
+                    <p class="subtitulo_cuadros">Días de Atención: {{sectorjusticia.diasAtencion}}</p>
+                  </div>
+
+                  <div class="col-lg-4 px-4">
+                    <h1 class="titulo_cuadros2">Contacto</h1>
+                    <a class="subtitulo_cuadros2" href="{{sectorjusticia.web}}" target="_blank">{{sectorjusticia.web}}</a>
+                    <p class="subtitulo_cuadros2">{{sectorjusticia.correo}}</p>
+                    <p class="subtitulo_cuadros2">{{sectorjusticia.telefono}}</p>
+                    <a class="subtitulo_cuadros2" href="{{sectorjusticia.fb}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-17.png"></a>
+                    <a class="subtitulo_cuadros2" href="{{sectorjusticia.tw}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-18.png"></a>
+                  </div>
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+{% endblock %}
