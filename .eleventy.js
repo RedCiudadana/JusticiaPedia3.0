@@ -24,4 +24,11 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("dateFormat", function(date, format) {
         return moment(date).format(format);
     });
+
+    eleventyConfig.addFilter("log", function(variable) {
+        console.log(variable);
+        return variable;
+    });
+
+      
 }

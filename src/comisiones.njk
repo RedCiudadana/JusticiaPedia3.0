@@ -1,5 +1,9 @@
 ---
-permalink: "comisiones/index.html"
+pagination:
+  data: comisiones
+  size: 8
+  alias: list
+permalink: "comisiones/{{ pagination.pageNumber + 1}}/index.html"
 ---
 
 {% extends "src/base.njk" %}
@@ -30,6 +34,49 @@ permalink: "comisiones/index.html"
 							</div>
 							
 							
+						</div>
+					</div>
+				</div>
+
+				<!-- perfiles
+				============================================= -->
+
+				<div class="section m-0 py-6" style="background-color: #fff">
+					<div class="container">
+						<div class="row">
+
+							{% for comision in list %}
+							<div class="col-lg-3 col-sm-12 order-2 order-lg-1 text-center my-2">
+
+								<div class="cuadro_perfil h-100">
+									<img src="{{comision.fotoURL}}">
+									<div class="p-4">
+										<h1 class="my-2">{{comision.nombre}}</h1>
+										<a href="/comision/{{comision.nombre}}/index.html" class="btn btn2">Más Información<a>
+									</div>
+								</div>
+      
+							</div>
+							{% endfor %}
+							
+							
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="pagination my-4">
+								<ul>
+									<li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt</a>{% else %}<a style="pointer-events:none" href="{{ pagination.href.previous }}">&lt</a>{% endif %}</li>
+
+									
+									{%- for pageEntry in pagination.pages %}
+
+									<li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+									{%- endfor %}
+									
+									
+									<li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">&gt</a>{% else %}<a style="pointer-events:none" href="{{ pagination.href.next }}">&gt</a>{% endif %}</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
