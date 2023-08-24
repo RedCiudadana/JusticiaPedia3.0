@@ -19,4 +19,51 @@ tags:
 
 {% block content %}
 
+    <section id="content px-4">
+			<div class="content-wrap">
+
+				<!-- Contenido
+				============================================= -->
+
+				<div class="section m-0 py-6" style="background-color: #f1f4fa">
+					<div class="container">
+						<div class="row">
+
+              <div class="col-lg-12 my-4 py-4 px-4 background-perfiles">
+                <a href="/index.html" style="font-weight:600">Inicio</a> / <a href="/comisiones/1/index.html" style="font-weight:600">Comisiones de Postulación</a> / <a href="" style="pointer-events:none;font-weight:600">{{comisiones.nombre}}</a>
+              </div>
+
+              <div class="col-lg-12 my-4 p-0 background-perfiles">
+                <a href="/index.html" class="btn btn3" style="font-weight:600"><img src="">Institución</a>
+              </div>
+
+              <div class="col-lg-12 my-4 py-4 background-perfiles">
+                <div class="row">
+                  <div class="col-lg-4"><img src="{{comisiones.fotoURL}}"></div>
+
+                  <div class="col-lg-4 px-4">
+                    <h1 class="titulo_cuadros">{{comisiones.nombre}}</h1>
+                    <p class="subtitulo_cuadros">Horario de Atención: {{comisiones.horario}}</p>
+                    <p class="subtitulo_cuadros">Días de Atención: {{comisiones.diasAtencion}}</p>
+                  </div>
+
+                  <div class="col-lg-4 px-4">
+                    <h1 class="titulo_cuadros2">Contacto</h1>
+                    <a class="subtitulo_cuadros2" href="{{comisiones.web}}" target="_blank">{{comisiones.web}}</a>
+                    <p class="subtitulo_cuadros2">{{comisiones.correo}}</p>
+                    <p class="subtitulo_cuadros2">{{comisiones.telefono}}</p>
+                    <a class="subtitulo_cuadros2" href="{{comisiones.fb}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-17.png"></a>
+                    <a class="subtitulo_cuadros2" href="{{comisiones.tw}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-18.png"></a>
+                  </div>
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
 {% endblock %}
