@@ -1,0 +1,3210 @@
+[
+ {
+  "nombre": "Corte Suprema de Justicia (CSJ)",
+  "id": "institution-1",
+  "sector": "justicia",
+  "descripcion": "En la Corte Suprema de Justicia se tramitan y resuelven los recursos de casación que se plantean contra las resoluciones de las Salas de Apelaciones, así como las acciones de amparo en Primera Instancia y exhibición personal, son los Magistrados de la Corte Suprema de Justicia quienes tienen a su cargo el estudio y resolución de dichos recursos y otras funciones.",
+  "horario": "08:00 - 15:30",
+  "diasAtencion": "Lunes - Viernes",
+  "mision": "Administrar justicia garantizando su acceso a la población, en procura de la paz y armonía social. La Corte Suprema de Justicia está integrada por 13 Magistrados (Art. 214 CPRG), quienes son electos por el Congreso de la República de Guatemala para un período de cinco años. Los magistrados son electos entre los abogados que llenan los requisitos establecidos en la ley, propuestos de una nómina de veintiséis candidatos, por la Comisión de Postulación conformada por honorables abogados quienes son funcionarios de diferentes Instituciones, (Arts. 208 y 215 CPRG).",
+  "vision": "Los Magistrados de la Corte Suprema de Justicia eligen entre ellos al Presidente, quien permanece en el cargo por un año. El Presidente del Organismo Judicial es también Presidente de la Corte Suprema de Justicia, cuya autoridad se extiende a todos los juzgados y tribunales del país.",
+  "enlaceAccesoInformacion": "http:\/\/www.oj.gob.gt\/index.php\/organismo-judicial\/consultas-en-linea\/2016-09-21-15-14-24",
+  "enlaceGobiernoDigital": "http:\/\/gobiernodigital.gt\/",
+  "enlaceDatosAbiertos": "http:\/\/datosabiertos.gt\/",
+  "enlaceServicios": "http:\/\/siat.oj.gob.gt\/#\/dashboard",
+  "enlaceServicios2": "http:\/\/jurisprudencia.oj.gob.gt\/",
+  "direccion": "21 Calle 7-70 Zona 1. Centro Cívico,",
+  "web": "www.oj.gob.gt",
+  "correo": "comsocial@oj.gob.gt",
+  "telefono": "2290 4444",
+  "fb": "https:\/\/www.facebook.com\/organismojudicial.gt",
+  "tw": "https:\/\/twitter.com\/OJGuatemala",
+  "fotoURL": "https:\/\/raw.githubusercontent.com\/RedCiudadana\/Instituciones-Justiciapedia\/gh-pages\/1.-Corte-Suprema-de-Justicia-(CSJ).png"
+ },
+ {
+  "nombre": "Corte de Apelaciones (CA)",
+  "id": "institution-2",
+  "sector": "justicia",
+  "descripcion": "La Corte de Apelaciones es un conjunto determinado de los tribunales colegiados de segunda instancia pertenecientes al Organismo Judicial, cuya jurisdicción se extiende a todo el país, para el ejercicio de sus facultades judiciales dentro de los procesos establecidos por la Constitución Política de la República y demás leyes que los facultan para dicha función, como lo hace la Ley del Organismo Judicial, Dto. 2-89 del Congreso de la República, en su artículo 58.1​ Cada sala o corte de apelación está compuesta por un número determinado de jueces llamados Magistrados, dentro de los cuales uno actúa como su Presidente.",
+  "horario": "08:00 - 15:30",
+  "diasAtencion": "Lunes - Viernes",
+  "mision": "Según el artículo 89 de la Ley del Organismo Judicial, los presidentes de salas y tribunales colegiados son la autoridad superior del tribunal; supervisarán el trámite de todos los asuntos, sustanciándolos hasta dejarlos en estado de resolverlos. Los presidentes mantendrán el orden en el tribunal y cuando se celebre vista o audiencia pública dictará las disposiciones que crean convenientes, debiendo proceder contra cualquier persona que desobedezca o las perturbe.",
+  "vision": "La Corte de Apelaciones dentro de la República de Guatemala, es superior a los Juzgados de Primera Instancia y Juzgados de Paz o Juzgados Menores. La Corte de Apelaciones se encuentra bajo el mando Corte Suprema de Justicia, como instancia judicial próxima inferior o segunda instancia.",
+  "enlaceAccesoInformacion": "http:\/\/www.oj.gob.gt\/index.php\/organismo-judicial\/consultas-en-linea\/2016-09-21-15-14-24",
+  "enlaceGobiernoDigital": "http:\/\/gobiernodigital.gt\/",
+  "enlaceDatosAbiertos": "http:\/\/datosabiertos.gt\/",
+  "enlaceServicios": "http:\/\/siat.oj.gob.gt\/#\/dashboard",
+  "enlaceServicios2": "http:\/\/jurisprudencia.oj.gob.gt\/",
+  "direccion": "22 Calle 7-70 Zona 1. Centro Cívico,",
+  "web": "www.oj.gob.gt",
+  "correo": "comsocial@oj.gob.gt",
+  "telefono": "2290 4444",
+  "fb": "https:\/\/www.facebook.com\/organismojudicial.gt",
+  "tw": "https:\/\/twitter.com\/OJGuatemala",
+  "fotoURL": "https:\/\/raw.githubusercontent.com\/RedCiudadana\/Instituciones-Justiciapedia\/gh-pages\/2.-Corte-de-Apelaciones-(CA).png"
+ },
+ {
+  "nombre": "Juzgados de Primera Instancia",
+  "id": "institution-3",
+  "sector": "justicia",
+  "descripcion": "Los Juzgados de Primera Instancia son tribunales pertenecientes al Organismo Judicial, dichos tribunales tienen como principal objetivo conocer los casos, hechos o procesos judiciales, así como delictivos en primera instancia, es decir, después de los Juzgados de Paz o Juzgados Menores, cuando se han requerido o de mayor importancia.",
+  "horario": "08:00 - 15:30",
+  "diasAtencion": "Lunes - Viernes",
+  "mision": "Los Juzgados de Primera Instancia al igual que la Corte Suprema de Justicia y la Corte de Apelaciones, ejercen sus facultades jurisdiccionales dentro de la República de Guatemala como tribunales de primera instancia y lo hace conforme los procesos establecidos dentro de la Constitución Política de la República de Guatemala y las demás leyes que los facultan para dicha función, como lo hace la Ley del Organismo Judicial, Dto. 2-89 del Congreso de la República de Guatemala, en su artículo 95.",
+  "vision": "La Corte Suprema de Justicia determinará la sede y distrito que corresponde a cada tribunal de primera instancia y a sus jueces, así como los hace con los demás tribunales, todo esto está descrito en el artículo 94 de la Ley del Organismo Judicial. Actualmente en toda la República hay un total de 218 juzgados.",
+  "enlaceAccesoInformacion": "http:\/\/www.oj.gob.gt\/index.php\/organismo-judicial\/consultas-en-linea\/2016-09-21-15-14-24",
+  "enlaceGobiernoDigital": "http:\/\/gobiernodigital.gt\/",
+  "enlaceDatosAbiertos": "http:\/\/datosabiertos.gt\/",
+  "enlaceServicios": "http:\/\/siat.oj.gob.gt\/#\/dashboard",
+  "enlaceServicios2": "http:\/\/jurisprudencia.oj.gob.gt\/",
+  "direccion": "23 Calle 7-70 Zona 1. Centro Cívico,",
+  "web": "www.oj.gob.gt",
+  "correo": "comsocial@oj.gob.gt",
+  "telefono": "2290 4444",
+  "fb": "https:\/\/www.facebook.com\/organismojudicial.gt",
+  "tw": "https:\/\/twitter.com\/OJGuatemala",
+  "fotoURL": "https:\/\/raw.githubusercontent.com\/RedCiudadana\/Instituciones-Justiciapedia\/gh-pages\/3.-Juzgados-de-Primera-Instancia.png"
+ },
+ {
+  "nombre": "Juzgados de Paz o Menores",
+  "id": "institution-4",
+  "sector": "justicia",
+  "descripcion": "Básicamente son los juzgados menores y conocen casos denominados de ínfima cuantía o de bagatela, esto porque el impacto que estos delitos genera a la sociedad es menor que los delitos que están destinados a la competencia de los Juzgados de Primera Instancia.",
+  "horario": "08:00 - 15:30",
+  "diasAtencion": "Lunes - Viernes",
+  "mision": "Estos órganos de administración de justicia se encuentran regulados en el Capítulo V de la Ley del Organismo Judicial bajo el nombre de \"Juzgados Menores\". Tal como su nombre lo indica, son los órganos de administración de justicia que conocen los casos de menor impacto en la sociedad.",
+  "vision": "Por mandato legal, debe existir al menos uno en cada cabecera departamental, pero igualmente Corte Suprema de Justicia determinará las sedes y distritos de estos independientemente de las circunscripciones municipales.",
+  "enlaceAccesoInformacion": "http:\/\/www.oj.gob.gt\/index.php\/organismo-judicial\/consultas-en-linea\/2016-09-21-15-14-24",
+  "enlaceGobiernoDigital": "http:\/\/gobiernodigital.gt\/",
+  "enlaceDatosAbiertos": "http:\/\/datosabiertos.gt\/",
+  "enlaceServicios": "http:\/\/siat.oj.gob.gt\/#\/dashboard",
+  "enlaceServicios2": "http:\/\/jurisprudencia.oj.gob.gt\/",
+  "direccion": "24 Calle 7-70 Zona 1. Centro Cívico,",
+  "web": "www.oj.gob.gt",
+  "correo": "comsocial@oj.gob.gt",
+  "telefono": "2290 4444",
+  "fb": "https:\/\/www.facebook.com\/organismojudicial.gt",
+  "tw": "https:\/\/twitter.com\/OJGuatemala",
+  "fotoURL": "https:\/\/raw.githubusercontent.com\/RedCiudadana\/Instituciones-Justiciapedia\/gh-pages\/4.-Juzgados-de-Paz-o-Menores.png"
+ },
+ {
+  "nombre": "Consejo de la Carrera Judicial",
+  "id": "institution-5",
+  "sector": "justicia",
+  "descripcion": "Órgano rector de la Carrera Judicial en Guatemala, es de carácter permanente y goza de independencia funcional en el desempeño de sus atribuciones respecto Corte Suprema de Justicia y cuenta con el auxilio de las Juntas de Disciplina Judicial, Junta de Disciplina de Apelaciones, Supervisión General de Tribunales, Escuela de Estudios Judiciales, Unidad de Evaluación de Desempeño Profesional y otras unidades administrativas que considere convenientes.",
+  "horario": "08:00 - 15:30",
+  "diasAtencion": "Lunes - Viernes",
+  "mision": "Dirigir todo lo referente a ingreso, permanencia, ascensos, traslados, recomendaciones, sanciones, destituciones y demás situaciones que afecten a los miembros de la carrera judicial.",
+  "vision": "Se integra un representante titular y suplente electo por el Pleno de Corte Suprema de Justicia; Un magistrado titular y suplente, electos por la asamblea general de Magistrados de Corte de Apelaciones; Un miembro titular y suplente, electos por la asamblea general de jueces de primera instancia; Un miembro titular y suplente, electos por la asamblea general de Jueces de Paz; Un miembro titular y suplente experto en administración pública; Un miembro titular y suplente experto en recursos humanos; Un miembro titular y suplente experto en psicología. La presidencia del Consejo será sorteada entre los representantes de Corte Suprema de Justicia, Corte de Apelaciones, Primera Instancia y Juzgados de Paz.",
+  "enlaceAccesoInformacion": "http:\/\/www.oj.gob.gt\/index.php\/organismo-judicial\/consultas-en-linea\/2016-09-21-15-14-24",
+  "enlaceGobiernoDigital": "http:\/\/gobiernodigital.gt\/",
+  "enlaceDatosAbiertos": "http:\/\/datosabiertos.gt\/",
+  "enlaceServicios": "http:\/\/siat.oj.gob.gt\/#\/dashboard",
+  "enlaceServicios2": "http:\/\/jurisprudencia.oj.gob.gt\/",
+  "direccion": "25 Calle 7-70 Zona 1. Centro Cívico,",
+  "web": "www.oj.gob.gt",
+  "correo": "comsocial@oj.gob.gt",
+  "telefono": "2290 4444",
+  "fb": "https:\/\/www.facebook.com\/organismojudicial.gt",
+  "tw": "https:\/\/twitter.com\/OJGuatemala",
+  "fotoURL": "https:\/\/raw.githubusercontent.com\/RedCiudadana\/Instituciones-Justiciapedia\/gh-pages\/1.-Corte-Suprema-de-Justicia-(CSJ).png"
+ },
+ {
+  "nombre": "Corte de Constitucionalidad (CC)",
+  "id": "institution-6",
+  "sector": "justicia",
+  "descripcion": "Tribunal permanente encargado de ejercer el control y defensa del orden constitucional. Actúa como órgano independiente de los tres organismos del Estado y ejerce funciones específicas plasmadas en la Constitución Política de la República y la Ley de Amparo, Exhibición Personal y de Constitucionalidad.",
+  "horario": "Horario de oficina: 08:30 - 16:30. Recepción de documentos: 24:00 horas.",
+  "diasAtencion": "Días de oficina: Lunes- Viernes. Días para recepción de documentos: todos los días son hábiles.",
+  "mision": "Ejercer el rol de garante del orden constitucional, resolviendo amparos en segunda instancia, inconstitucionalidades y opiniones consultivas. En todos estos casos dictaminará si lo actuado por cualquier actor de la administración pública se sujeta a lo dispuesto en la Constitución Política de la República y no transgrede el orden establecido en dicha norma suprema.",
+  "vision": "Se integra por un magistrado titular y un suplete nombrado por el pleno del Consejo Superior Universitario; un magistrado titular y un suplente nombrado por el Presidente de la República de Guatemala; un magistrado titular y un suplente nombrados por el pleno del Congreso de la República; un magistrado titular y un suplente nombrados por el pleno de Corte Suprema de Justicia; un titular y un suplente nombrados por la asamblea general del Colegio de Abogados y Notarios de Guatemala. Durarán cinco años en sus funciones.",
+  "enlaceAccesoInformacion": "https:\/\/cc.gob.gt\/informacion-publica-de-oficio\/",
+  "enlaceGobiernoDigital": "http:\/\/gobiernodigital.gt\/",
+  "enlaceDatosAbiertos": "http:\/\/datosabiertos.gt\/",
+  "direccion": "11 avenida 9-37 zona 1, Ciudad de guatemala",
+  "web": "https:\/\/cc.gob.gt\/",
+  "correo": "transparencia@cc.gob.gt",
+  "telefono": 23234646,
+  "fb": "https:\/\/www.facebook.com\/Corte-de-Constitucionalidad-de-Guatemala-247532011943595\/",
+  "tw": "https:\/\/twitter.com\/CC_Guatemala",
+  "fotoURL": "https:\/\/raw.githubusercontent.com\/RedCiudadana\/Instituciones-Justiciapedia\/gh-pages\/6.-Corte-de-Constitucionalidad-(CC).png"
+ },
+ {
+  "nombre": "Ministerio Público (MP)",
+  "id": "institution-7",
+  "sector": "justicia",
+  "descripcion": "Órgano auxiliar de la administración pública y de los tribunales, creado constitucionalmente por el artículo 251 y que se regula por su propia ley orgánica.",
+  "horario": "08:00 - 15:30",
+  "diasAtencion": "Lunes - Viernes",
+  "mision": "Institución autónoma encargada de dirigir la investigación penal y titular del ejercicio de la persecusión penal. Está encargado de velar por el estricto cumplimiento de las leyes del país.",
+  "vision": "Dirigido por el Fiscal General de la República y Jefe del Ministerio Público, quien es nombrado por el Presidente de la República.",
+  "enlaceAccesoInformacion": "https:\/\/www.mp.gob.gt\/transparencia\/",
+  "enlaceGobiernoDigital": "http:\/\/gobiernodigital.gt\/",
+  "enlaceDatosAbiertos": "http:\/\/datosabiertos.gt\/",
+  "direccion": "15 avenida 15-16 zona 1 Barrio Gerona Ciudad de Guatemala",
+  "web": "https:\/\/www.mp.gob.gt\/",
+  "correo": "informacion@mp.gob.gt",
+  "telefono": 24119191,
+  "fb": "https:\/\/www.facebook.com\/mpguatemala\/",
+  "tw": "https:\/\/twitter.com\/MPguatemala",
+  "fotoURL": "https:\/\/raw.githubusercontent.com\/RedCiudadana\/Instituciones-Justiciapedia\/gh-pages\/7.-Ministerio-Publico-(MP).png"
+ },
+ {
+  "nombre": "Instituto Nacional de Ciencias Forenses",
+  "id": "institution-8",
+  "sector": "justicia",
+  "descripcion": "Institución autónoma y auxiliar de la administración de justicia responsable de los peritajes técnicos científicos.",
+  "horario": "08:00 - 15:30",
+  "diasAtencion": "Lunes - Viernes",
+  "mision": "Prestación del servicio de investigación científica de forma independiente, emitiendo dictámenes científicos.",
+  "vision": "Es dirigido por el Director General, quien será nombrado por el Consejo Directivo. El Consejo Directivo se integra de la siguiente forma: Presidente de Corte Suprema de Justicia, quien lo presidirá; Ministro de Gobernación o su representante, quien deberá ser viceministro; Fiscal General de la República, o su representante, quien deberá ser funcionario del más alto nivel; Presidente de la Junta Directiva del Colegio de Médicos y Cirujanos de Guatemala o su representante; Presidente de la Junta Directiva del Colegio de Químicos y Farmacéuticos de Guatemala o su representante; Presidente de Junta Directiva del Colegio de Abogados y Notarios de Guatemala o su representante.",
+  "enlaceAccesoInformacion": "https:\/\/www.inacif.gob.gt\/index.php\/69-servicios-uip",
+  "enlaceGobiernoDigital": "http:\/\/gobiernodigital.gt\/",
+  "enlaceDatosAbiertos": "http:\/\/datosabiertos.gt\/",
+  "direccion": "14 calle 5-49 zona 1, Ciudad de Guatemala.",
+  "web": "https:\/\/www.inacif.gob.gt\/",
+  "correo": "uip@inacif.gob.gt",
+  "telefono": 23273100,
+  "fb": "https:\/\/www.facebook.com\/Inacifgt",
+  "tw": "https:\/\/twitter.com\/INACIFGT",
+  "fotoURL": "https:\/\/raw.githubusercontent.com\/RedCiudadana\/Instituciones-Justiciapedia\/gh-pages\/8.-Instituto-Nacional-de-Ciencias-Forenses.png"
+ },
+ {
+  "nombre": "Procurador de los Derechos Humanos (PDH)",
+  "id": "institution-9",
+  "sector": "justicia",
+  "descripcion": "el Procurador de los Derechos Humanos es un Comisionado del Congreso de la República que está encargado de defender los Derechos Humanos que la Constitución y los tratados internacionales en materia de Derechos Humanos ratificados por el Estado de Guatemala garantizan.",
+  "horario": "08:00 - 15:30",
+  "diasAtencion": "Lunes - Viernes",
+  "mision": "Es el encargado de investigar denuncias sobre dicha temática, recomendar y censurar públicamente los actos que atenten contra los Derechos Humanos de toda persona que se encuentre en territorio guatemalteco.",
+  "vision": "El Procurador de los Derechos Humanos es un comisionado del Congreso de la República y es nombrado por la Comisión de Derechos Humanos de dicho organismo. Dicha Comisión está integrada por un diputado de cada partido que está representado en el pleno del congreso de la República, su período es de cuatro años.",
+  "enlaceAccesoInformacion": "https:\/\/www.pdh.org.gt\/nvoacceso\/solicitud\/form_solicitante\/",
+  "enlaceGobiernoDigital": "http:\/\/gobiernodigital.gt\/",
+  "enlaceDatosAbiertos": "http:\/\/datosabiertos.gt\/",
+  "direccion": "12 avenida 12-54 zona 1 Ciudad de Guatemala",
+  "web": "https:\/\/www.pdh.org.gt\/",
+  "correo": "accesoinformacion@pdh.gob.gt",
+  "telefono": 24241717,
+  "fb": "https:\/\/www.facebook.com\/PDHgt\/",
+  "tw": "https:\/\/twitter.com\/PDHgt",
+  "fotoURL": "https:\/\/raw.githubusercontent.com\/RedCiudadana\/Instituciones-Justiciapedia\/gh-pages\/10.-Procurador-de-los-Derechos-Humanos-(PDH).png"
+ },
+ {
+  "nombre": "Contraloria General de Cuentas (CGC)",
+  "id": "institution-10",
+  "sector": "justicia",
+  "descripcion": "La Contraloría General de Cuentas en un ente técnico y descentralizado encargado de fiscalizar los ingresos y egresos y todo lo referente al interés hacendario de los organismos del Estado, municipios, entidades descentralizadas y autónomas.",
+  "horario": "08:00 - 16:00",
+  "diasAtencion": "Lunes - Viernes",
+  "mision": "Es el ente encargado de verificar que la gestión pública se ejecuta con probidad, eficacia, eficiencia, transparencia, economía y equidad. También promueve el intercambio de información por medio de informes de auditoría y promueve la actualización y modernización de los sistemas financieros de la administración pública.",
+  "vision": "La Contraloría General de Cuentas es dirigida por el Contralor General de Cuentas quién es electo para un período de cuatro años por el Congreso de la República",
+  "enlaceAccesoInformacion": "https:\/\/www.contraloria.gob.gt\/index.php\/informacion-publica\/",
+  "enlaceGobiernoDigital": "http:\/\/gobiernodigital.gt\/",
+  "enlaceDatosAbiertos": "http:\/\/datosabiertos.gt\/",
+  "direccion": "7ma avenida 7-32 zona 13 Ciudad de Guatemala",
+  "web": "https:\/\/www.contraloria.gob.gt\/",
+  "correo": "daip@contraloria.gob.gt",
+  "telefono": 24178700,
+  "fb": "https:\/\/www.facebook.com\/contraloriagt\/",
+  "tw": "https:\/\/twitter.com\/Contraloria_gt",
+  "fotoURL": "https:\/\/raw.githubusercontent.com\/RedCiudadana\/Instituciones-Justiciapedia\/gh-pages\/11.-Contraloria-General-de-Cuentas-(CGC).png"
+ },
+ {
+  "nombre": "Instituto de la Defensa Pública Penal (IDPP)",
+  "id": "institution-11",
+  "sector": "justicia",
+  "descripcion": "Entidad pública y autónoma que ejerce la función técnica de defensa legal con carácter social para guatemaltecos y guatemaltecas, con el propósito de garantizar el derecho de defensa asegurando la plena aplicación del debido proceso.",
+  "horario": "08:00 - 15:30",
+  "diasAtencion": "Lunes - Viernes",
+  "mision": "El Instituto de la Defensa Pública Penal, desarrolla sus atribuciones con fundamento en el derecho de defensa que garantiza la Constitución Política de la República de Guatemala, los tratados y convenios Internacionales ratificados por Guatemala en materia de Derechos Humanos, la Ley Contra el Femicidio y Otras Formas de Violencia Contra la Mujer, así como en su Ley de creación, reglamentos, en cumplimiento de los Acuerdos de Paz.",
+  "vision": "El Instituto de la Defensa Pública Penal es dirigido por un director general quien será elegido por el Congreso de la República.",
+  "enlaceAccesoInformacion": "http:\/\/www.idpp.gob.gt\/leyacceso\/leyaccesoinformacion.aspx",
+  "enlaceGobiernoDigital": "http:\/\/gobiernodigital.gt\/",
+  "enlaceDatosAbiertos": "http:\/\/datosabiertos.gt\/",
+  "direccion": "7ma avenida 10-35 zona 1 Ciudad de Guatemala",
+  "web": "http:\/\/www.idpp.gob.gt\/",
+  "correo": "uinfo@idpp.gob.gt",
+  "telefono": 25015757,
+  "fb": "https:\/\/www.facebook.com\/institutodeladefensapublicapenal\/",
+  "tw": "https:\/\/twitter.com\/IDPP_gt",
+  "fotoURL": "https:\/\/raw.githubusercontent.com\/RedCiudadana\/Instituciones-Justiciapedia\/gh-pages\/9.-Instituto-de-la-Defensa-Publica-Penal-(IDPP).png"
+ },
+ {
+  "nombre": "Tribunal Supremo Electoral (TSE)",
+  "id": "institution-12",
+  "sector": "justicia",
+  "descripcion": "El Tribunal Supremo Electoral es un ente independiente de los tres poderes del Estado y quien es el rector de la materia electoral de la República. Se regula por lo que establece la Ley Electoral y de Partidos Políticos.",
+  "horario": "08:00 - 15:30",
+  "diasAtencion": "Lunes - Viernes",
+  "mision": "Órgano encargado de garantizar el derecho a elegir y ser electo de los guatemaltecos y guatemaltecas, así como velar por la transparencia de los procesos electorales y de consulta popular que se celebren en el país.",
+  "vision": "El Tribunal Supremo Electoral se integra por cinco magistrados titulares y cinco magistrados suplentes electos todos por el Congreso de la República de Guatemala. Cada uno de los magistrados deberá obtener el voto de dos terceras partes del total de diputados y durarán en sus funciones seis años.",
+  "enlaceAccesoInformacion": "https:\/\/www.tse.org.gt\/index.php\/laip\/solicitud-de-informacion-en-linea",
+  "enlaceGobiernoDigital": "http:\/\/gobiernodigital.gt\/",
+  "enlaceDatosAbiertos": "http:\/\/datosabiertos.gt\/",
+  "direccion": "6ta avenida 0-32 zona 2 Ciudad de Guatemala",
+  "web": "https:\/\/www.tse.org.gt\/",
+  "correo": "unidaddeinformacion@tse.gob.gt",
+  "telefono": 23783900,
+  "fb": "https:\/\/www.facebook.com\/tseguatemala\/",
+  "tw": "https:\/\/twitter.com\/TSEGuatemala",
+  "fotoURL": "https:\/\/raw.githubusercontent.com\/RedCiudadana\/Instituciones-Justiciapedia\/gh-pages\/12.-Tribunal-Supremo-Electoral-(TSE).png"
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ },
+ {
+  "id": ""
+ }
+]
