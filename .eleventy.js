@@ -30,5 +30,10 @@ module.exports = function (eleventyConfig) {
         return variable;
     });
 
-      
+    eleventyConfig.addFilter("filtrarPorInstitucion", function(coleccion, id) {
+        if (!coleccion || !id) {
+            return [];
+        }
+        return coleccion.filter(item => item.data.perfiles.institution === id);
+    });
 }

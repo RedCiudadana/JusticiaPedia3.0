@@ -68,7 +68,13 @@ tags:
               </div>
 
               <div id="autoridades" class="tabcontent p-0">
-                  
+                <div class="col-lg-12 my-4 py-4 background-perfiles">
+                  <div class="row">
+                    {% for perfil in collections.perfiles | filtrarPorInstitucion("comisiones.nombre") %}
+                      <p>{{ perfil.nombre }}</p>
+                    {% endfor %}
+                  </div>
+                </div>
               </div>
 
               <div id="comisiones" class="tabcontent p-0">
