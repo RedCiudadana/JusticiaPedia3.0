@@ -20097,3 +20097,55 @@ label.checkbox {
   width: 25px;
   margin: 4px 0;
 }
+
+.tab {
+	background-color: #fff;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media only screen and (max-width: 668px) {
+    .tab {
+        display: block;
+    }
+}
+  
+/* Style the buttons inside the tab */
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 20px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	width: 33%;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #91c0db;
+	color: #fff;
+}
+  
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: #91c0db;
+	color: #fff;
+}
+  
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	width: 100%;
+	animation: fadeEffect 1s;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
