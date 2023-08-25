@@ -52,7 +52,7 @@ permalink: "comisiones/{{ pagination.pageNumber + 1}}/index.html"
 									<img src="{{comision.fotoURL}}">
 									<div class="p-4">
 										<h1 class="my-2">{{comision.nombre}}</h1>
-										<a href="/comision/{{comision.nombre}}/index.html" class="btn btn2">Más Información<a>
+										<a href="/comision/{{comision.nombre | slug | safe}}/index.html" class="btn btn2">Más Información<a>
 									</div>
 								</div>
       

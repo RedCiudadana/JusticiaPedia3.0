@@ -4,7 +4,7 @@ pagination:
   size: 1
   alias: perfiles
   addAllPagesToCollections: true
-permalink: "perfiles/{{perfiles.id}}/{{perfiles.nombre | slug}}/index.html"
+permalink: "perfiles/{{perfiles.id}}/{{perfiles.nombre | slug | safe}}/index.html"
 tags:
   - perfiles
 ---

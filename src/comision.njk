@@ -4,7 +4,7 @@ pagination:
   size: 1
   alias: comisiones
   addAllPagesToCollections: true
-permalink: "comision/{{comisiones.nombre}}/index.html"
+permalink: "comision/{{comisiones.nombre | slug | safe}}/index.html"
 tags:
   - comisiones
 ---

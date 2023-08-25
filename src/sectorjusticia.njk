@@ -52,7 +52,7 @@ permalink: "sectorjusticia/{{ pagination.pageNumber + 1}}/index.html"
 									<img src="{{sectorjusticia.fotoURL}}">
 									<div class="p-4">
 										<h1 class="my-2" style="height:50px">{{sectorjusticia.nombre}}</h1>
-										<a href="/sectorjusticia/{{sectorjusticia.nombre}}/index.html" class="btn btn2">Más Información<a>
+										<a href="/sectorjusticia/{{sectorjusticia.nombre | slug | safe}}/index.html" class="btn btn2">Más Información<a>
 									</div>
 								</div>
       

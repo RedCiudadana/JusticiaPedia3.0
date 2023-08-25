@@ -4,7 +4,7 @@ pagination:
   size: 1
   alias: sectorjusticia
   addAllPagesToCollections: true
-permalink: "sectorjusticia/{{sectorjusticia.nombre}}/index.html"
+permalink: "sectorjusticia/{{sectorjusticia.nombre | slug | safe}}/index.html"
 tags:
   - sectorjusticia
 ---
