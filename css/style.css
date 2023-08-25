@@ -20124,7 +20124,7 @@ label.checkbox {
 	background-color: #fff;
 	width: 100%;
 	display: flex;
-	justify-content: justify;
+	justify-content: flex-start;
   box-shadow: 5px 5px 5px #dedede;
   border-radius: 10px;
 }
@@ -20145,9 +20145,8 @@ label.checkbox {
 	padding: 20px 16px;
 	transition: 0.3s;
 	font-size: 17px;
-	width: 20%;
+	width: 100%;
   border-radius: 10px;
-  margin-right: 5px;
 }
 
 /* Change background color of buttons on hover */

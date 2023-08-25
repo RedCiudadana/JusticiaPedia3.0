@@ -33,10 +33,16 @@ tags:
                 <a href="/index.html" style="font-weight:600">Inicio</a> / <a href="/comisiones/1/index.html" style="font-weight:600">Comisiones de Postulación</a> / <a href="" style="pointer-events:none;font-weight:600">{{comisiones.nombre}}</a>
               </div>
                 
-              <div class="tab col-lg-12 p-1">
-                <button class="tablinks h-100" onclick="openTab(event, 'institucion')" id="defaultOpen"><i class="lni lni-grid-alt" style="margin-right:10px"></i>Institución</button>
-                <button class="tablinks h-100" onclick="openTab(event, 'autoridades')"><i class="fa-solid fa-flag" style="margin-right:10px"></i>Autoridades</button>
-                <button class="tablinks h-100" onclick="openTab(event, 'comisiones')"><i class="fa-solid fa-x" style="margin-right:10px"></i>Comisiones de Postulación</button>
+              <div class="tab p-1">
+                <div class="col-lg-2 mr-2">
+                  <button class="tablinks h-100" onclick="openTab(event, 'institucion')" id="defaultOpen"><i class="lni lni-grid-alt" style="margin-right:10px"></i>Institución</button>
+                </div>
+                <div class="col-lg-2 mr-2">
+                  <button class="tablinks h-100" onclick="openTab(event, 'autoridades')"><i class="fa-solid fa-flag" style="margin-right:10px"></i>Autoridades</button>
+                </div>
+                <div class="col-lg-2 mr-2">
+                  <button class="tablinks h-100" onclick="openTab(event, 'comisiones')"><i class="fa-solid fa-x" style="margin-right:10px"></i>Comisiones de Postulación</button>
+                </div>
               </div>
 
               <div id="institucion" class="tabcontent p-0">
