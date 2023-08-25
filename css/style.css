@@ -20073,6 +20073,28 @@ label.checkbox {
   box-shadow: 5px 5px 5px #dedede;
 }
 
+.background-perfiles2{
+  background-color: #fff; 
+  border-radius:0 0 10px 10px;
+  box-shadow: 5px 5px 5px #dedede;
+  padding: 20px;
+}
+
+.background-perfiles2{
+  font-size: 18px;
+}
+
+.background-perfiles-header{
+  background-color: #4c5761; 
+  border-radius:10px 10px 0 0;
+  box-shadow: 5px 5px 5px #dedede;
+  padding: 0 20px;
+}
+
+.background-perfiles-header h1{
+  font-size: 20px;
+}
+
 .titulo_cuadros{
   font-size: 30px;
 }

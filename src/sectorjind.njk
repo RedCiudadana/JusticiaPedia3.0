@@ -64,6 +64,77 @@ tags:
                   </div>
                   
                 </div>
+
+                <div class="my-4">
+                  <div class="col-lg-12 py-4 background-perfiles-header">
+                    <h1 class="text-white">Descripción de la Institución</h1>
+                  </div>
+                  <div class="col-lg-12 py-4 background-perfiles2">
+                    <p>{{sectorjusticia.descripcion}}</p>
+                  </div>
+                </div>
+
+                <div class="my-4">
+                  <div class="col-lg-12 py-4 background-perfiles-header">
+                    <h1 class="text-white">Misión</h1>
+                  </div>
+                  <div class="col-lg-12 py-4 background-perfiles2">
+                    <p>{{sectorjusticia.mision}}</p>
+                  </div>
+                </div>
+
+                <div class="my-4">
+                  <div class="col-lg-12 py-4 background-perfiles-header">
+                    <h1 class="text-white">Visión</h1>
+                  </div>
+                  <div class="col-lg-12 py-4 background-perfiles2">
+                    <p>{{sectorjusticia.vision}}</p>
+                  </div>
+                </div>
+
+                <div class="my-4">
+                  <div class="col-lg-12 py-4 background-perfiles-header">
+                    <h1 class="text-white">Presupuesto</h1>
+                  </div>
+                  <div class="col-lg-12 py-4 background-perfiles2">
+
+                  </div>
+                </div>
+
+                <div class="my-4">
+                  <div class="col-lg-12 py-4 background-perfiles-header">
+                    <h1 class="text-white">Enlaces</h1>
+                  </div>
+                  <div class="col-lg-12 py-4 background-perfiles2">
+                    <div class="row d-flex">
+                      {% if sectorjusticia.enlaceServicios %}
+                      <div class="col-lg-3">
+                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceAccesoInformacion}}">Acceso a la Información</a>
+                      </div>
+                      <div class="col-lg-3">
+                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceGobiernoDigital}}">Gobierno Digital</a>
+                      </div>
+                      <div class="col-lg-3">
+                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceDatosAbiertos}}">Datos Abiertos</a>
+                      </div>
+                      <div class="col-lg-3">
+                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceServicios}}">Servicios 1</a>
+                      </div>
+                      {% else %}
+                      <div class="col-lg-4">
+                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceAccesoInformacion}}">Acceso a la Información</a>
+                      </div>
+                      <div class="col-lg-4">
+                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceGobiernoDigital}}">Gobierno Digital</a>
+                      </div>
+                      <div class="col-lg-4">
+                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceDatosAbiertos}}">Datos Abiertos</a>
+                      </div>
+                      {% endif %}
+                      
+                    </div>
+                  </div>
+                </div>
                     
               </div>
 
