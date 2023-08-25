@@ -36,4 +36,18 @@ module.exports = function (eleventyConfig) {
         }
         return coleccion.filter(item => item.data.perfiles.institution === id);
     });
+
+    eleventyConfig.addFilter("filtrarPorEleccionI", function(coleccion, id) {
+        if (!coleccion || !id) {
+            return [];
+        }
+        return coleccion.filter(item => item.data.perfiles.election === id);
+    });
+
+    eleventyConfig.addFilter("filtrarPorComision", function(coleccion, id) {
+        if (!coleccion || !id) {
+            return [];
+        }
+        return coleccion.filter(item => item.data.perfiles.comission === id);
+    });
 }
