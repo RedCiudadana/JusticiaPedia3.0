@@ -20102,7 +20102,9 @@ label.checkbox {
 	background-color: #fff;
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: justify;
+  box-shadow: 5px 5px 5px #dedede;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 668px) {
@@ -20121,7 +20123,9 @@ label.checkbox {
 	padding: 20px 16px;
 	transition: 0.3s;
 	font-size: 17px;
-	width: 33%;
+	width: 20%;
+  border-radius: 10px;
+  margin-right: 5px;
 }
 
 /* Change background color of buttons on hover */
@@ -20139,7 +20143,6 @@ label.checkbox {
 /* Style the tab content */
 .tabcontent {
 	display: none;
-	padding: 6px 12px;
 	width: 100%;
 	animation: fadeEffect 1s;
 }
@@ -20148,4 +20151,8 @@ label.checkbox {
 @keyframes fadeEffect {
 	from {opacity: 0;}
 	to {opacity: 1;}
+}
+
+.img_institucion{
+  padding: 0 20px;
 }

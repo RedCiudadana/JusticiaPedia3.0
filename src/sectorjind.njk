@@ -33,30 +33,46 @@ tags:
                 <a href="/index.html" style="font-weight:600">Inicio</a> / <a href="/sectorjusticia/1/index.html" style="font-weight:600">Sector Justicia</a> / <a href="" style="pointer-events:none;font-weight:600">{{sectorjusticia.nombre}}</a>
               </div>
 
-              <div class="col-lg-12 my-4 p-0 background-perfiles">
-                <a href="/index.html" class="btn btn3" style="font-weight:600"><img src="">Institución</a>
+              <div class="tab col-lg-12 p-1">
+                <button class="tablinks h-100" onclick="openTab(event, 'institucion')" id="defaultOpen"><i class="lni lni-grid-alt" style="margin-right:10px"></i>Institución</button>
+                <button class="tablinks h-100" onclick="openTab(event, 'autoridades')"><i class="fa-solid fa-flag" style="margin-right:10px"></i>Autoridades</button>
+                <button class="tablinks h-100" onclick="openTab(event, 'sectorjusticia')"><i class="fa-solid fa-x" style="margin-right:10px"></i>Sector Justicia</button>
               </div>
 
-              <div class="col-lg-12 my-4 py-4 background-perfiles">
-                <div class="row">
-                  <div class="col-lg-4"><img src="{{sectorjusticia.fotoURL}}"></div>
+              <div id="institucion" class="tabcontent p-0">
 
-                  <div class="col-lg-4 px-4">
-                    <h1 class="titulo_cuadros">{{sectorjusticia.nombre}}</h1>
-                    <p class="subtitulo_cuadros">Horario de Atención: {{sectorjusticia.horario}}</p>
-                    <p class="subtitulo_cuadros">Días de Atención: {{sectorjusticia.diasAtencion}}</p>
-                  </div>
+                <div class="col-lg-12 my-4 py-4 background-perfiles">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <img class="img_institucion" src="{{sectorjusticia.fotoURL}}">
+                    </div>
 
-                  <div class="col-lg-4 px-4">
-                    <h1 class="titulo_cuadros2">Contacto</h1>
-                    <a class="subtitulo_cuadros2" href="{{sectorjusticia.web}}" target="_blank">{{sectorjusticia.web}}</a>
-                    <p class="subtitulo_cuadros2">{{sectorjusticia.correo}}</p>
-                    <p class="subtitulo_cuadros2">{{sectorjusticia.telefono}}</p>
-                    <a class="subtitulo_cuadros2" href="{{sectorjusticia.fb}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-17.png"></a>
-                    <a class="subtitulo_cuadros2" href="{{sectorjusticia.tw}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-18.png"></a>
+                    <div class="col-lg-4 px-4">
+                      <h1 class="titulo_cuadros">{{sectorjusticia.nombre}}</h1>
+                      <p class="subtitulo_cuadros">Horario de Atención: {{sectorjusticia.horario}}</p>
+                      <p class="subtitulo_cuadros">Días de Atención: {{sectorjusticia.diasAtencion}}</p>
+                    </div>
+
+                    <div class="col-lg-4 px-4">
+                      <h1 class="titulo_cuadros2">Contacto</h1>
+                      <a class="subtitulo_cuadros2" href="{{comisiones.web}}" target="_blank">{{sectorjusticia.web}}</a>
+                      <p class="subtitulo_cuadros2">{{sectorjusticia.correo}}</p>
+                      <p class="subtitulo_cuadros2">{{sectorjusticia.telefono}}</p>
+                      <a class="subtitulo_cuadros2" href="{{sectorjusticia.fb}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-17.png"></a>
+                      <a class="subtitulo_cuadros2" href="{{sectorjusticia.tw}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-18.png"></a>
+                    </div>
                   </div>
+                  
                 </div>
-                
+                    
+              </div>
+
+              <div id="autoridades" class="tabcontent p-0">
+                  
+              </div>
+
+              <div id="sectorjusticia" class="tabcontent p-0">
+                  
               </div>
 
             </div>
@@ -65,5 +81,27 @@ tags:
 
       </div>
     </section>
+
+{% endblock %}
+
+{% block body_javascripts %}
+
+    <script>
+      function openTab(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpen").click();
+    </script>
+
 
 {% endblock %}
