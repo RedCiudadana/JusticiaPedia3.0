@@ -20089,6 +20089,14 @@ label.checkbox {
   border-radius:10px 10px 0 0;
   box-shadow: 5px 5px 5px #dedede;
   padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.background-perfiles-header img{
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .background-perfiles-header h1{
@@ -20113,11 +20121,12 @@ label.checkbox {
   font-size: 19px;
   font-weight: 600;
   margin: 4px 0;
+  display: flex;
 }
 
 .red{
   width: 25px;
-  margin: 4px 0;
+  margin: 4px 4px 4px 0;
 }
 
 .tab {
@@ -20176,4 +20185,15 @@ label.checkbox {
 
 .img_institucion{
   padding: 0 20px;
+}
+
+.tablinks{
+  display: flex;
+  align-items: center;
+}
+
+.tablinks img{
+  width:60px;
+  height: auto;
+  margin-right: 10px;
 }
