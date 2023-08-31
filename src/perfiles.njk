@@ -11,12 +11,144 @@ tags:
 {% extends "src/base.njk" %}
 
 {% block head %}
-<title>{{perfiles.nombre | slug }} | JusticiaPedia</title>
+<title>JusticiaPedia | {{perfiles.nombre | slug }}</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 {% endblock %}
 
 {% block content %}
 
+    <section id="content px-4">
+			<div class="content-wrap">
+
+				<!-- Contenido
+				============================================= -->
+
+				<div class="section m-0 py-6" style="background-color: #f1f4fa">
+					<div class="container">
+						<div class="row">
+
+              <div class="col-lg-12 my-4 py-4 px-4 background-perfiles">
+                <a href="/index.html" style="font-weight:600">Inicio</a> / <a href="/sectorjusticia/1/index.html" style="font-weight:600">Sector Justicia</a> / <a href="" style="pointer-events:none;font-weight:600">{{sectorjusticia.nombre}}</a>
+              </div>
+
+              <div class="tab p-1">
+                <div class="col-lg-2 mr-2">
+                  <button class="tablinks h-100" onclick="openTab(event, 'institucion')" id="defaultOpen"><img src="/elementos/ICONOS/ICONOS/11.png">Información</button>
+                </div>
+                <div class="col-lg-2 mr-2">
+                  <button class="tablinks h-100" onclick="openTab(event, 'autoridades')"><img src="/elementos/ICONOS/ICONOS/12.png">Tab2</button>
+                </div>
+                <div class="col-lg-2 mr-2">
+                  <button class="tablinks h-100" onclick="openTab(event, 'comisiones')"><img src="/elementos/ICONOS/ICONOS/13.png">Tab3</button>
+                </div>
+              </div>
+
+              <div id="institucion" class="tabcontent p-0">
+
+                <div class="col-lg-12 my-4 py-4 background-perfiles">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <img class="img_institucion" src="{{perfiles.fotoURL}}">
+                    </div>
+
+                    <div class="col-lg-4 px-4">
+                      <h1 class="titulo_cuadros">{{perfiles.nombre}}</h1>
+                      <p class="subtitulo_cuadros">Institución: {{perfiles.seleccionarInstitución}}</p>
+                      <p class="subtitulo_cuadros">Puesto: {{perfiles.puesto}}</p>
+                    </div>
+
+                    <!--div class="col-lg-4 px-4">
+                      <h1 class="titulo_cuadros2">Contacto</h1>
+                      <a class="subtitulo_cuadros2" href="{{perfiles.web}}" target="_blank"><img class="red" src="/elementos/ICONOS/ICONOS-07.png">{{perfiles.web}}</a>
+                      <p class="subtitulo_cuadros2"><img class="red" src="/elementos/ICONOS/ICONOS-08.png">{{perfiles.correo}}</p>
+                      <p class="subtitulo_cuadros2"><img class="red" src="/elementos/ICONOS/ICONOS-09.png">{{perfiles.telefono}}</p>
+                      <a class="subtitulo_cuadros2" href="{{perfiles.fb}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-17.png"></a>
+                      <a class="subtitulo_cuadros2" href="{{perfiles.tw}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-18.png"></a>
+                    </div-->
+                  </div>
+                  
+                </div>
+
+                <div class="my-4">
+                  <div class="col-lg-12 py-4 background-perfiles-header">
+                    <img src="/elementos/ICONOS/ICONOS/08.png">
+                    <h1 class="text-white">Experiencia Profesional</h1>
+                  </div>
+                  <div class="col-lg-12 py-4 background-perfiles2">
+                    <p>{{perfiles.experienciaProfesional}}</p>
+                  </div>
+                </div>
+
+                <div class="my-4">
+                  <div class="col-lg-12 py-4 background-perfiles-header">
+                    <img src="/elementos/ICONOS/ICONOS/09.png">
+                    <h1 class="text-white">Experiencia Académica</h1>
+                  </div>
+                  <div class="col-lg-12 py-4 background-perfiles2">
+                    <p>{{perfiles.experienciaAcademica}}</p>
+                  </div>
+                </div>
+
+
+                <div class="my-4">
+                  <div class="col-lg-12 py-4 background-perfiles-header">
+                    <img src="/elementos/ICONOS/ICONOS/06.png">
+                    <h1 class="text-white">Enlaces</h1>
+                  </div>
+                  <div class="col-lg-12 py-4 background-perfiles2">
+                    <div class="row d-flex">                  
+                      <div class="col-lg-6">
+                        <a class="btn btn3 w-100" href="{{perfiles.cv}}">CV</a>
+                      </div>
+                      <div class="col-lg-6">
+                        <a class="btn btn3 w-100" href="{{perfiles.expediente}}">Expediente</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                    
+              </div>
+
+              <div id="autoridades" class="tabcontent p-0">
+                <div class="col-lg-12 my-4 py-4 background-perfiles">
+                  <div class="row px-4">
+  
+                  </div>
+                </div>
+              </div>
+
+              <div id="comisiones" class="tabcontent p-0">
+                  
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
 {% endblock %}
+
+{% block body_javascripts %}
+
+    <script>
+      function openTab(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpen").click();
+    </script>
+
+{% endblock %}
+
