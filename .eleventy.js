@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('js');
     eleventyConfig.addPassthroughCopy('elementos');
     eleventyConfig.addPassthroughCopy('admin');
+    eleventyConfig.addPassthroughCopy('images');
 
     eleventyConfig.addNunjucksFilter("rmj", function(content) {
         return rmj(content);
@@ -49,5 +50,11 @@ module.exports = function (eleventyConfig) {
             return [];
         }
         return coleccion.filter(item => item.data.perfiles.comission === id);
+    });
+
+    eleventyConfig.addCollection('podcastsHighlighted', (collectionApi) => {
+        return collectionApi.getFilteredByTag('podcasts').filter((item) => {
+            return item.data.highlight == true;
+        });
     });
 }

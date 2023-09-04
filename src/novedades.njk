@@ -1,0 +1,92 @@
+---
+pagination:
+  data: collections.novedades
+  size: 6
+  alias: list
+  reverse: true
+permalink: "novedades/{% if pagination.pageNumber > 0 %}pagina-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+---
+
+{% extends "src/base.njk" %}
+
+{% block head %}
+    <title>JusticiaPedia | Novedades</title>
+{% endblock %}
+
+{% block content %}
+
+        <!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+
+                <!-- event-area-start -->
+                <div class="event-area pt-60 pb-130">
+                    <div class="container">
+
+                        <div class="container clearfix">
+                            <div class="heading-block center">
+
+                                <img style="margin:2% auto;padding:2% 45%"  src="/elementos/NUESTRA ELECCION-09.png" alt="Canvas Logo">
+
+                                <h2>Lo último</h2>
+                                
+                            </div>
+                        </div>
+
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                {% if list%}
+                                {% for item in list%}
+
+                                <div class="col-md-4 col-lg-4 col-sm-12 my-4">
+                                    <div class="cuadro_blog ">
+                                        <a href="{{item.url}}"><img src="{{ item.data.image }}" alt="Evento" class="w-36"></a>
+                                        <div class="px-4 py-4 text-left">
+                                            <i class="fa-regular fa-calendar"></i><span class="text-sm">
+                                            {{item.data.date | dateFormat('DD/MM/YYYY')}}
+                                            </span><br>
+                                            <br>
+                                            <h5 class="font-bold text-lg">
+                                            {{item.data.title }}
+                                            </h5>
+                                            
+                                            <span class="text-sm">
+                                            {{item.data.description}}
+                                            </span>
+                                            
+                                        </div>
+                                        <a href="{{item.url}}"><div class="px-4 pb-2 pt-2 text-left" style="border-top:#ccc 1px solid">
+                                            <span>Ver más <i class="fa-solid fa-caret-right"></i></span>
+                                        </div></a>
+
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                {% endif %}
+                               
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    {% if pagination.href.previous %}
+                                    <div class="mx-4">
+                                        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">← Iniciativas más recientes</a>{% else %}←  Nuevos blog{% endif %}
+                                    </div>
+                                    {% endif %}
+                                    {% if pagination.href.next %}
+                                    <div class="mx-4">
+                                        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Iniciativas anteriores →</a>{% else %}Blog anteriores →{% endif %}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+{% endblock %}

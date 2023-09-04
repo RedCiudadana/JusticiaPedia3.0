@@ -28,9 +28,35 @@ permalink: "index.html"
 					<div class="container">
 						<div class="row">
 
-							<!--div class="col-lg-8 col-sm-12 order-2 order-lg-1">
-								noticias
-							</div-->
+							<div class="col-lg-8 col-sm-12 order-1 order-lg-2 my-4">
+								{% for novedad in collections.novedades | limit(1)%}
+								<div class="novedad_principal mb-4">
+									<img src="{{novedad.data.image}}">
+									<h4>Destacado</h4>
+									<a href="{{novedad.url}}"><h1>{{novedad.data.title}}</h1></a>
+									<p>{{novedad.data.description}}</p>
+									<i>Escrito por: &nbsp{{novedad.data.autor}}</i>
+								</div>
+								{% endfor%}
+							</div>
+							<div class="col-lg-4 col-sm-12 order-3 order-lg-3 my-4">
+								{% for novedad in collections.novedades | limitPart(1,2) %}
+								<div class="novedad_secundaria_lateral mb-4">
+									<img src="{{novedad.data.image}}">
+									<a href="{{novedad.url}}"><h1>{{novedad.data.title}}</h1></a>
+									<p>{{novedad.data.description}}</p>
+									<i>Escrito por: &nbsp{{novedad.data.autor}}</i>
+								</div>
+								{% endfor%}
+								{% for novedad in collections.novedades | limitPart(2,3) %}
+								<div class="novedad_terciaria_lateral mt-4 mb-4">
+									<a href="{{novedad.url}}"><h1>{{novedad.data.title}}</h1></a>
+									<p>{{novedad.data.description}}</p>
+									<i>Escrito por: &nbsp{{novedad.data.autor}}</i>
+								</div>
+								{% endfor%}
+
+							</div>
 							
 							
 						</div>
@@ -81,24 +107,26 @@ permalink: "index.html"
 
 				<div class="section py-6 m-0" style="background-color: #4c5761">
 					
+					{% if collections.podcastsHighlighted %}
+					{% for podcast in collections.podcastsHighlighted | reverse | limit(1)%}
 					<div class="container">
 						<div class="row align-items-center col-mb-50">
+					
 							<div class="col-md-12 text-white">
 								<div class="row posts-md col-mb-30" style="align-items:center">
 									
 									<div class="entry col-sm-6 col-xl-6">
 										<div class="grid-inner">
-											<span class="subtitulo-podcast">Podcast</span>
+											<span class="subtitulo-podcast">{{podcast.data.title}} </span>
 											<h3 class="titulo-podcast">JusticiaPedia</h3>
-											<p class="texto-podcast">Lorem opsum dolor sit amet consecteur Lorem opsum dolor sit amet consecteur  Lorem opsum dolor sit amet consecteur </p>
-											<a href="#" class="btn">Suscribirse</a>
+											<p class="texto-podcast">{{podcast.data.description}}</p>
+											
 										</div>
 									</div>
 
 									<div class="entry col-sm-6 col-xl-6">
 										<div class="grid-inner">
-											<!--a href="https://open.spotify.com/episode/07jgf9edynFB5HFDBT4unV" target="_blank"><img style="width:300px;margin:auto" src="/elementos/PODCAST.png"></a-->
-											
+											{{podcast.data.link | safe}}
 										</div>
 									</div>
 
@@ -106,6 +134,8 @@ permalink: "index.html"
 							</div>
 						</div>
 					</div>
+					{% endfor %}
+					{% endif %}
 
 				</div>
 
@@ -115,22 +145,44 @@ permalink: "index.html"
 				<div class="section py-6 mb-0 mt-0" style="background-color: ##f1f5fb">
 					
 					<div class="container">
-						<div class="row align-items-center col-mb-50">
+						<div class="row col-mb-50">
 								
 							<div class="col-lg-9 col-sm-12">
 								<h2 class="font-bold text-4xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Noticias</h2>
-								<!--
-								noticias
-								-->
+								{% for novedad in collections.novedades | reverse | limit(5) %}
+					
+				
+								<a href="{{novedad.url}}" class="flex border-b-2 pb-4 mb-4 text-current responsive">
+								<img src="{{ novedad.data.image }}" alt="novedad" class="w-48 h-100">
+								<div class="pl-8 my-auto" style="text-align:left">
+									<h5 class="font-bold text-lg">
+									{{novedad.data.title }}
+									</h5>
+									<span class="text-sm">
+									{{novedad.data.date | dateFormat('DD/MM/YYYY')}}
+									</span><br>
+									<span class="text-sm">
+									{{novedad.data.description}}
+									</span>
+								</div>
+								</a>
+
+								{% endfor %}
 								<div class="mb-6" style="display:flex; justify-content:flex-end">
-									<a href="/eventos/index.html">Más Eventos<i class="icon-arrow-right" style="margin-left:5px"></i></a>
+									<a href="/novedades/index.html">Más Novedades<i class="icon-arrow-right" style="margin-left:5px"></i></a>
 								</div>	
 							</div>	
 							<div class="col-lg-3 col-sm-12">
 								<h2 class="font-bold text-3xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Videos</h2>
-								<!--
-								videos
-								-->
+								{% for video in collections.videos | reverse | limit(4)%}
+								<div class="entry ">
+									<div class="grid-inner">
+										<iframe width="560" height="215" src="{{video.data.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<p class="txt-video">{{video.data.description}}</p>
+									</div>
+									
+								</div>
+								{% endfor %}
 								<div class="mb-6">
 									<div style="display:flex; justify-content:flex-end">
 									<a href="/videos/index.html">Más Videos<i class="icon-arrow-right" style="margin-left:5px"></i></a>
