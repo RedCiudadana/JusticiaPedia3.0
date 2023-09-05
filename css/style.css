@@ -19646,7 +19646,7 @@ label.checkbox {
 }
 
 .novedad_principal{
-  text-align: center!important;
+  text-align: left!important;
 }
 
 .novedad_principal img{
@@ -20094,7 +20094,7 @@ label.checkbox {
 }
 
 .background-perfiles-header img{
-  width: 80px;
+  width: 60px;
   height: auto;
   margin-right: 10px;
 }
@@ -20105,20 +20105,22 @@ label.checkbox {
 
 .titulo_cuadros{
   font-size: 30px;
+  line-height: 29px;
+  margin-bottom: 8px;
 }
 
 .titulo_cuadros2{
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .subtitulo_cuadros{
   padding: 5px 0;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 600;
 }
 
 .subtitulo_cuadros2{
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 600;
   margin: 4px 0;
   display: flex;
@@ -20153,7 +20155,7 @@ label.checkbox {
 	cursor: pointer;
 	padding: 20px 16px;
 	transition: 0.3s;
-	font-size: 17px;
+	font-size: 16px;
 	width: 100%;
   border-radius: 10px;
 }
@@ -20196,4 +20198,40 @@ label.checkbox {
   width:60px;
   height: auto;
   margin-right: 10px;
+}
+
+.text-page{
+  color: #e0a892!important;
+}
+
+.btn-twitter{
+  padding: 4px 5px;
+  background-color: #2697dc;
+  color: #fff!important;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.btn-twitter:hover{
+  color: #fff!important;
+}
+
+.btn-twitter i{
+  margin-right: 4px;
+}
+
+.btn-facebook{
+  padding: 4px 5px;
+  background-color: #4468b1;
+  color: #fff!important;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.btn-facebook i{
+  margin-right: 4px;
+}
+
+.btn-facebook:hover{
+  color: #fff!important;
 }

@@ -8,20 +8,6 @@
 {% block content %}
     
 
-<!-- Banner-area-start -->
-<div class="breadcrumb-area pt-150 pb-155" style="background-image:url(/assets/img/red/05.png)">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="breadcrumb-text text-center">
-                    <h1 style="font-size:45px">{{ title }}</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Banner-area-end -->
-
 <!--POST-->
 <!-- Content
 ============================================= -->
@@ -31,16 +17,22 @@
     <div class="row">
       <div class="col-xl-12 col-lg-12 col-md-12">
         <article class="container">
-          
+         
           <section class="content text-justify">
             <div class="row mt-40 mb-40">
+              <div class="col-lg-12">
+                <img src="{{image}}" class="w-100">
+              </div>
               
               <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 px-4 h2-margin">
+
+                <h1 style="font-size:45px">{{ title }}</h1>
+
                 <h6 class=" font-bold text-1xl text-gray-800">
                   {{ description }}
                 </h6>
 
-                <div class=" text-sm text-gray-600 mb-40">
+                <div class=" text-sm text-page mb-40">
                   Autor:
                     <span class="text-sm font-semibold text-gray-900 ml-2">
                       <!--autor correo fecha-->
@@ -52,34 +44,14 @@
                 </div>
               </div>
               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 px-4" >
-                <h6>Escucha nuestros podcasts</h6>
-                <div class="w-full">
-
-                </div>
-              </div>  
-            </div>
-
-          </section>
-          
-        </article>
-      </div>
-
-      <!-- event-area-start -->
-      <div class="event-area pt-80 pb-130">
-          <div class="container">
-              <div class="breadcrumb-text text-left">
-                  <h2 class="font-bold text-xl border-b-2 border-yellow-500 mb-4 pb-4">Más Blogs</h2>
-              </div>
-
-              <div class="row">
-
-
+                <h4 class="pt-4">MÁS BLOGS</h4>
+                <div class="row">
                 {% for post in collections.novedades | reverse | limit(4)%}
                 {% if page.url !== post.url %}
                   <div class="col-lg-12">
-                    <a href="{{ post.url }}" class="flex border-b-2 pb-4 mb-4 text-current">
-                        <img src="{{ post.data.image }}" alt="Novedad" class="w-36">
-                        <div class="pl-8 my-auto">
+                    <a href="{{ post.url }}" class="border-b-2 p-4 mb-4 text-current">
+                        <img src="{{ post.data.image }}" alt="Novedad" class="w-100">
+                        <div class="my-auto">
                         <h5 class="font-bold text-lg">
                             {{ post.data.title }}
                         </h5>
@@ -92,11 +64,14 @@
 
                 {% endif %}
                 {% endfor %}
+                </div>
+              </div>  
+            </div>
 
-              </div>
-
-          </div>
-      <div>
+          </section>
+          
+        </article>
+      </div>
 
     </div>
   </div>

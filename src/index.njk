@@ -32,7 +32,7 @@ permalink: "index.html"
 								{% for novedad in collections.novedades | limit(1)%}
 								<div class="novedad_principal mb-4">
 									<img src="{{novedad.data.image}}">
-									<h4>Destacado</h4>
+									<!--h4>Destacado</h4-->
 									<a href="{{novedad.url}}"><h1>{{novedad.data.title}}</h1></a>
 									<p>{{novedad.data.description}}</p>
 									<i>Escrito por: &nbsp{{novedad.data.autor}}</i>
@@ -48,7 +48,7 @@ permalink: "index.html"
 									<i>Escrito por: &nbsp{{novedad.data.autor}}</i>
 								</div>
 								{% endfor%}
-								{% for novedad in collections.novedades | limitPart(2,3) %}
+								{% for novedad in collections.novedades | limitPart(1,2) %}
 								<div class="novedad_terciaria_lateral mt-4 mb-4">
 									<a href="{{novedad.url}}"><h1>{{novedad.data.title}}</h1></a>
 									<p>{{novedad.data.description}}</p>
@@ -89,7 +89,7 @@ permalink: "index.html"
 								<a href="/comisiones/1/index.html">
 									<div class="row cuadro_pre_especiales">
 										<div class="col-lg-2">
-											<img class="" src="/elementos/ICONOS/JUSTICIAPEDIA_02-10.png">
+											<img class="" src="/elementos/ICONOS/JUSTICIAPEDIA_02-11.png">
 										</div>
 										<div class="col-lg-10">
 											<h4 class="titulo_pre_especiales">Comisiones de Postulación</h4>

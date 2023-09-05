@@ -35,14 +35,18 @@ tags:
               </div>
 
               <div class="tab p-1">
-                <div class="col-lg-2 mr-2">
+                <div class="col-lg-2-5 mr-2">
                   <button class="tablinks h-100" onclick="openTab(event, 'institucion')" id="defaultOpen"><img src="/elementos/ICONOS/ICONOS/11.png">Institución</button>
                 </div>
-                <div class="col-lg-2 mr-2">
+                <div class="col-lg-2-5 mr-2">
                   <button class="tablinks h-100" onclick="openTab(event, 'autoridades')"><img src="/elementos/ICONOS/ICONOS/12.png">Autoridades</button>
                 </div>
-                <div class="col-lg-2 mr-2">
+                <div class="col-lg-3 mr-2">
                   <button class="tablinks h-100" onclick="openTab(event, 'comisiones')"><img src="/elementos/ICONOS/ICONOS/13.png">Comisiones de Postulación</button>
+                </div>
+                <div class="col-lg-3 m-auto p-2" style="text-align:end">
+                  <a href="{{sectorjusticia.tw}}" class="btn-twitter"><i class="fa-brands fa-twitter"></i>Tweet</a>
+                  <a href="{{sectorjusticia.fb}}" class="btn-facebook"><i class="fa-brands fa-facebook-f"></i>Compartir</a>
                 </div>
               </div>
 
@@ -65,15 +69,13 @@ tags:
                       <a class="subtitulo_cuadros2" href="{{sectorjusticia.web}}" target="_blank"><img class="red" src="/elementos/ICONOS/ICONOS-07.png">{{sectorjusticia.web}}</a>
                       <p class="subtitulo_cuadros2"><img class="red" src="/elementos/ICONOS/ICONOS-08.png">{{sectorjusticia.correo}}</p>
                       <p class="subtitulo_cuadros2"><img class="red" src="/elementos/ICONOS/ICONOS-09.png">{{sectorjusticia.telefono}}</p>
-                      <a class="subtitulo_cuadros2" href="{{sectorjusticia.fb}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-17.png"></a>
-                      <a class="subtitulo_cuadros2" href="{{sectorjusticia.tw}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-18.png"></a>
                     </div>
                   </div>
                   
                 </div>
 
                 <div class="my-4">
-                  <div class="col-lg-12 py-4 background-perfiles-header">
+                  <div class="col-lg-12 py-2 background-perfiles-header">
                     <img src="/elementos/ICONOS/ICONOS/01.png">
                     <h1 class="text-white">Descripción de la Institución</h1>
                   </div>
@@ -83,7 +85,7 @@ tags:
                 </div>
 
                 <div class="my-4">
-                  <div class="col-lg-12 py-4 background-perfiles-header">
+                  <div class="col-lg-12 py-2 background-perfiles-header">
                     <img src="/elementos/ICONOS/ICONOS/02.png">
                     <h1 class="text-white">Misión</h1>
                   </div>
@@ -93,7 +95,7 @@ tags:
                 </div>
 
                 <div class="my-4">
-                  <div class="col-lg-12 py-4 background-perfiles-header">
+                  <div class="col-lg-12 py-2 background-perfiles-header">
                     <img src="/elementos/ICONOS/ICONOS/03.png">
                     <h1 class="text-white">Visión</h1>
                   </div>
@@ -103,7 +105,7 @@ tags:
                 </div>
 
                 <div class="my-4">
-                  <div class="col-lg-12 py-4 background-perfiles-header">
+                  <div class="col-lg-12 py-2 background-perfiles-header">
                     <img src="/elementos/ICONOS/ICONOS/05.png">
                     <h1 class="text-white">Presupuesto</h1>
                   </div>
@@ -113,34 +115,77 @@ tags:
                 </div>
 
                 <div class="my-4">
-                  <div class="col-lg-12 py-4 background-perfiles-header">
+                  <div class="col-lg-12 py-2 background-perfiles-header">
                     <img src="/elementos/ICONOS/ICONOS/06.png">
                     <h1 class="text-white">Enlaces</h1>
                   </div>
                   <div class="col-lg-12 py-4 background-perfiles2">
                     <div class="row d-flex">
                       {% if sectorjusticia.enlaceServicios %}
-                      <div class="col-lg-3">
-                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceAccesoInformacion}}">Acceso a la Información</a>
+                      <div class="col-lg-2-5 my-2">
+                        <a class="btn btn3 w-100" style="padding:10px" href="{{sectorjusticia.enlaceAccesoInformacion}}">
+                          <div class="d-flex align-items-center">
+                            <img style="width:60px" src="/elementos/ICONOS/ICONOS/17.png">
+                            <h6>Acceso a la Información</h6>
+                          </div>
+                          </a>
                       </div>
-                      <div class="col-lg-3">
-                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceGobiernoDigital}}">Gobierno Digital</a>
+                      <div class="col-lg-2-5 my-2">
+                        <a class="btn btn3 w-100" style="padding:10px" href="{{sectorjusticia.enlaceGobiernoDigital}}">
+                          <div class="d-flex align-items-center">
+                            <img style="width:60px" src="/elementos/ICONOS/ICONOS/18.png">
+                            <h6>Gobierno Digital</h6>
+                          </div>
+                          </a>
                       </div>
-                      <div class="col-lg-3">
-                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceDatosAbiertos}}">Datos Abiertos</a>
+                      <div class="col-lg-2-5 my-2">
+                        <a class="btn btn3 w-100" style="padding:10px" href="{{sectorjusticia.enlaceDatosAbiertos}}">
+                          <div class="d-flex align-items-center">
+                            <img style="width:60px" src="/elementos/ICONOS/ICONOS/19.png">
+                            <h6>Datos Abiertos</h6>
+                          </div>
+                          </a>
                       </div>
-                      <div class="col-lg-3">
-                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceServicios}}">Servicios 1</a>
+                      <div class="col-lg-2-5 my-2">
+                        <a class="btn btn3 w-100" style="padding:10px" href="{{sectorjusticia.enlaceServicios}}">
+                          <div class="d-flex align-items-center">
+                            <img style="width:60px" src="/elementos/ICONOS/ICONOS/20.png">
+                            <h6>Servicios 1</h6>
+                          </div>
+                          </a>
+                      </div>
+                      <div class="col-lg-2-5 my-2">
+                        <a class="btn btn3 w-100" style="padding:10px" href="{{sectorjusticia.enlaceServicios2}}">
+                          <div class="d-flex align-items-center">
+                            <img style="width:60px" src="/elementos/ICONOS/ICONOS/20.png">
+                            <h6>Servicios 2</h6>
+                          </div>
+                          </a>
                       </div>
                       {% else %}
-                      <div class="col-lg-4">
-                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceAccesoInformacion}}">Acceso a la Información</a>
+                      <div class="col-lg-4 my-2">
+                        <a class="btn btn3 w-100" style="padding:10px" href="{{sectorjusticia.enlaceAccesoInformacion}}">
+                          <div class="d-flex align-items-center">
+                            <img style="width:60px" src="/elementos/ICONOS/ICONOS/17.png">
+                            <h6>Acceso a la Información</h6>
+                          </div>
+                          </a>
                       </div>
-                      <div class="col-lg-4">
-                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceGobiernoDigital}}">Gobierno Digital</a>
+                      <div class="col-lg-4 my-2">
+                        <a class="btn btn3 w-100" style="padding:10px" href="{{sectorjusticia.enlaceGobiernoDigital}}">
+                          <div class="d-flex align-items-center">
+                            <img style="width:60px" src="/elementos/ICONOS/ICONOS/18.png">
+                            <h6>Gobierno Digital</h6>
+                          </div>
+                          </a>
                       </div>
-                      <div class="col-lg-4">
-                        <a class="btn btn3 w-100" href="{{sectorjusticia.enlaceDatosAbiertos}}">Datos Abiertos</a>
+                      <div class="col-lg-4 my-2">
+                        <a class="btn btn3 w-100" style="padding:10px" href="{{sectorjusticia.enlaceDatosAbiertos}}">
+                          <div class="d-flex align-items-center">
+                            <img style="width:60px" src="/elementos/ICONOS/ICONOS/19.png">
+                            <h6>Datos Abiertos</h6>
+                          </div>
+                          </a>
                       </div>
                       {% endif %}
                       

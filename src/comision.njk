@@ -34,14 +34,22 @@ tags:
               </div>
                 
               <div class="tab p-1">
-                <div class="col-lg-2 mr-2">
+                <div class="col-lg-2-5 mr-2">
                   <button class="tablinks h-100" onclick="openTab(event, 'institucion')" id="defaultOpen"><img src="/elementos/ICONOS/ICONOS/11.png">Institución</button>
                 </div>
-                <div class="col-lg-2 mr-2">
+                <div class="col-lg-2-5 mr-2">
                   <button class="tablinks h-100" onclick="openTab(event, 'autoridades')"><img src="/elementos/ICONOS/ICONOS/12.png">Comisionados</button>
                 </div>
-                <div class="col-lg-2 mr-2">
+                <div class="col-lg-2-5 mr-2">
                   <button class="tablinks h-100" onclick="openTab(event, 'comisiones')"><img src="/elementos/ICONOS/ICONOS/13.png">Candidaturas</button>
+                </div>
+                <div class="col-lg-3 m-auto p-2" style="text-align:end">
+                  {% if comisiones.tw %}
+                  <a href="{{comisiones.tw}}" class="btn-twitter"><i class="fa-brands fa-twitter"></i>Tweet</a>
+                  {% endif %}
+                  {% if comisiones.fb %}
+                  <a href="{{comisiones.fb}}" class="btn-facebook"><i class="fa-brands fa-facebook-f"></i>Compartir</a>
+                  {% endif %}
                 </div>
               </div>
 
@@ -64,15 +72,13 @@ tags:
                       <a class="subtitulo_cuadros2" href="{{comisiones.web}}" target="_blank"><img class="red" src="/elementos/ICONOS/ICONOS-07.png">{{comisiones.web}}</a>
                       <p class="subtitulo_cuadros2"><img class="red" src="/elementos/ICONOS/ICONOS-08.png">{{comisiones.correo}}</p>
                       <p class="subtitulo_cuadros2"><img class="red" src="/elementos/ICONOS/ICONOS-09.png">{{comisiones.telefono}}</p>
-                      <a class="subtitulo_cuadros2" href="{{comisiones.fb}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-17.png"></a>
-                      <a class="subtitulo_cuadros2" href="{{comisiones.tw}}" target="_blank"><img class="red" src="/elementos/ICONOS/JUSTICIAPEDIA_02-18.png"></a>
                     </div>
                   </div>
                   
                 </div>
 
                 <div class="my-4">
-                  <div class="col-lg-12 py-4 background-perfiles-header">
+                  <div class="col-lg-12 py-2 background-perfiles-header">
                     <img src="/elementos/ICONOS/ICONOS/01.png">
                     <h1 class="text-white">Descripción de la Institución</h1>
                   </div>
@@ -82,7 +88,7 @@ tags:
                 </div>
 
                 <div class="my-4">
-                  <div class="col-lg-12 py-4 background-perfiles-header">
+                  <div class="col-lg-12 py-2 background-perfiles-header">
                     <img src="/elementos/ICONOS/ICONOS/15.png">
                     <h1 class="text-white">Requisitos</h1>
                   </div>
@@ -92,7 +98,7 @@ tags:
                 </div>
 
                 <div class="my-4">
-                  <div class="col-lg-12 py-4 background-perfiles-header">
+                  <div class="col-lg-12 py-2 background-perfiles-header">
                     <img src="/elementos/ICONOS/ICONOS/14.png">
                     <h1 class="text-white">Comisión</h1>
                   </div>
@@ -102,7 +108,7 @@ tags:
                 </div>
 
                 <div class="my-4">
-                  <div class="col-lg-12 py-4 background-perfiles-header">
+                  <div class="col-lg-12 py-2 background-perfiles-header">
                     <img src="/elementos/ICONOS/ICONOS/07.png">
                     <h1 class="text-white">Infografía</h1>
                   </div>
@@ -112,7 +118,7 @@ tags:
                 </div>
 
                 <div class="my-4">
-                  <div class="col-lg-12 py-4 background-perfiles-header">
+                  <div class="col-lg-12 py-2 background-perfiles-header">
                     <img src="/elementos/ICONOS/ICONOS/10.png">
                     <h1 class="text-white">Cronograma</h1>
                   </div>
