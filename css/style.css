@@ -19851,18 +19851,19 @@ label.checkbox {
 }
 
 .dropdown-item:hover{
-  color: #fff!important;
+  color: #e0a892!important;
 }
 
 .link-dropdown{
-  color: #fff!important;
-  font-family: "Nunito-Regular", sans-serif;
-  font-size: 14px;
-  
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #4c5761!important;
 }
 
 .link-dropdown:hover{
-  color: #fff!important;
+  color: #e0a892!important;
 }
 
 .center-elements{

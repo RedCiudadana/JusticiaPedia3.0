@@ -38,7 +38,7 @@ module.exports = function (eleventyConfig) {
         return coleccion.filter(item => item.data.perfiles.institution === id);
     });
 
-    eleventyConfig.addFilter("filtrarPorEleccionI", function(coleccion, id) {
+    eleventyConfig.addFilter("filtrarPorEleccion", function(coleccion, id) {
         if (!coleccion || !id) {
             return [];
         }
@@ -57,4 +57,23 @@ module.exports = function (eleventyConfig) {
             return item.data.highlight == true;
         });
     });
+
+    eleventyConfig.addCollection('perfiles_institucionales', (collectionApi) => {
+        return collectionApi.getFilteredByTag('perfiles').filter((item) => {
+            return item.data.perfiles.institution !== 0;
+        });
+    });
+
+    eleventyConfig.addCollection('perfiles_comisionados', (collectionApi) => {
+        return collectionApi.getFilteredByTag('perfiles').filter((item) => {
+            return item.data.perfiles.comission !== 0;
+        });
+    });
+
+    eleventyConfig.addCollection('perfiles_candidatos', (collectionApi) => {
+        return collectionApi.getFilteredByTag('perfiles').filter((item) => {
+            return item.data.perfiles.election !== 0;
+        });
+    });
+    
 }

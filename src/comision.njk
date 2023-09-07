@@ -132,15 +132,57 @@ tags:
               <div id="autoridades" class="tabcontent p-0">
                 <div class="col-lg-12 my-4 py-4 background-perfiles">
                   <div class="row">
-                    {% for perfil in collections.perfiles | filtrarPorInstitucion("comisiones.nombre") %}
-                      <p>{{ perfil.nombre }}</p>
+                    {% for perfil in collections.perfiles | filtrarPorComision(comisiones.id) %}
+                    <div class="col-lg-3 col-sm-12 order-2 order-lg-1 text-center my-2">
+
+                      <div class="cuadro_perfil h-100">
+                        <div class="imagen-container">
+                          {% if perfil.data.perfiles.fotoURL %}
+                          <img class="imagen-principal" src="{{perfil.data.perfiles.fotoURL}}" alt="Imagen Principal" />
+                          <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" style="display: none;" />
+                          {% else %}
+                          <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+                          {% endif %}
+                        </div>
+
+                        <div class="p-4">
+                          <h1 class="my-2">{{perfil.data.perfiles.nombre}}</h1>
+                          <a href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug}}/index.html" class="btn btn2">Más Información<a>
+                        </div>
+                      </div>
+            
+                    </div>
                     {% endfor %}
                   </div>
                 </div>
               </div>
 
               <div id="comisiones" class="tabcontent p-0">
-                  
+                  <div class="col-lg-12 my-4 py-4 background-perfiles">
+                  <div class="row">
+                    {% for perfil in collections.perfiles | filtrarPorEleccion(comisiones.id) %}
+                    <div class="col-lg-3 col-sm-12 order-2 order-lg-1 text-center my-2">
+
+                      <div class="cuadro_perfil h-100">
+                        <div class="imagen-container">
+                          {% if perfil.data.perfiles.fotoURL %}
+                          <img class="imagen-principal" src="{{perfil.data.perfiles.fotoURL}}" alt="Imagen Principal" />
+                          <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" style="display: none;" />
+                          {% else %}
+                          <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+                          {% endif %}
+                        </div>
+
+                        <div class="p-4">
+                          <h1 class="my-2">{{perfil.data.perfiles.nombre}}</h1>
+                          <a href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug}}/index.html" class="btn btn2">Más Información<a>
+                        </div>
+                      </div>
+            
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
               </div>
 
             </div>
@@ -169,6 +211,32 @@ tags:
       evt.currentTarget.className += " active";
       }
       document.getElementById("defaultOpen").click();
+    </script>
+
+    <script>
+        // Obtén una lista de todos los contenedores de imágenes
+        const contenedoresImagenes = document.querySelectorAll(".imagen-container");
+
+        // Itera sobre cada contenedor de imágenes
+        contenedoresImagenes.forEach((contenedor) => {
+            // Obtén una referencia a la imagen principal y la imagen de respaldo dentro de cada contenedor
+            const imagenPrincipal = contenedor.querySelector(".imagen-principal");
+            const imagenRespaldo = contenedor.querySelector(".imagen-respaldo");
+
+            // Agrega un evento 'load' a la imagen principal
+            imagenPrincipal.addEventListener("load", () => {
+                // La imagen principal se ha cargado correctamente, muestra la imagen principal
+                imagenPrincipal.style.display = "block";
+                imagenRespaldo.style.display = "none";
+            });
+
+            // Agrega un evento 'error' a la imagen principal
+            imagenPrincipal.addEventListener("error", () => {
+                // Hubo un error al cargar la imagen principal, oculta la imagen principal y muestra la imagen de respaldo
+                imagenPrincipal.style.display = "none";
+                imagenRespaldo.style.display = "block";
+            });
+        });
     </script>
 
 

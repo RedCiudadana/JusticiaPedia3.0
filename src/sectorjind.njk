@@ -41,9 +41,21 @@ tags:
                 <div class="col-lg-2-5 mr-2">
                   <button class="tablinks h-100" onclick="openTab(event, 'autoridades')"><img src="/elementos/ICONOS/ICONOS/12.png">Autoridades</button>
                 </div>
+                {% set divPrinted = false %}
+                {% for comision in collections.comisiones %}
+                {% if comision.data.comisiones.institution == sectorjusticia.id %}
+                {% if sectorjusticia.id == "institution-6" and not divPrinted %}
                 <div class="col-lg-3 mr-2">
-                  <button class="tablinks h-100" onclick="openTab(event, 'comisiones')"><img src="/elementos/ICONOS/ICONOS/13.png">Comisiones de Postulación</button>
+                  <button class="tablinks h-100" onclick="redireccionar( '/comisiones/1/index.html' )"><img src="/elementos/ICONOS/ICONOS/13.png">Comisiones de Postulación</button>
                 </div>
+                {% set divPrinted = true %}
+                {% elseif sectorjusticia.id != "institution-6" %}
+                <div class="col-lg-3 mr-2">
+                  <button class="tablinks h-100" onclick="redireccionar( '{{ comision.url }}' )"><img src="/elementos/ICONOS/ICONOS/13.png">Comisiones de Postulación</button>
+                </div>
+                {% endif %}
+                {% endif %}
+                {% endfor %}
                 <div class="col-lg-3 m-auto p-2" style="text-align:end">
                   <a href="{{sectorjusticia.tw}}" class="btn-twitter"><i class="fa-brands fa-twitter"></i>Tweet</a>
                   <a href="{{sectorjusticia.fb}}" class="btn-facebook"><i class="fa-brands fa-facebook-f"></i>Compartir</a>
@@ -203,8 +215,12 @@ tags:
 
                       <div class="cuadro_perfil h-100">
                         <div class="imagen-container">
+                          {% if perfil.data.perfiles.fotoURL %}
                           <img class="imagen-principal" src="{{perfil.data.perfiles.fotoURL}}" alt="Imagen Principal" />
                           <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" style="display: none;" />
+                          {% else %}
+                          <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+                          {% endif %}
                         </div>
 
                         <div class="p-4">
@@ -217,10 +233,6 @@ tags:
                     {% endfor %}
                   </div>
                 </div>
-              </div>
-
-              <div id="comisiones" class="tabcontent p-0">
-                  
               </div>
 
             </div>
@@ -249,6 +261,40 @@ tags:
       evt.currentTarget.className += " active";
       }
       document.getElementById("defaultOpen").click();
+    </script>
+    
+    <script>
+    // Función que redirige a una URL proporcionada como parámetro
+        function redireccionar(url) {
+            // Utiliza el método window.location para redirigir a la URL especificada
+            window.location.href = url;
+        }
+    </script>
+
+    <script>
+        // Obtén una lista de todos los contenedores de imágenes
+        const contenedoresImagenes = document.querySelectorAll(".imagen-container");
+
+        // Itera sobre cada contenedor de imágenes
+        contenedoresImagenes.forEach((contenedor) => {
+            // Obtén una referencia a la imagen principal y la imagen de respaldo dentro de cada contenedor
+            const imagenPrincipal = contenedor.querySelector(".imagen-principal");
+            const imagenRespaldo = contenedor.querySelector(".imagen-respaldo");
+
+            // Agrega un evento 'load' a la imagen principal
+            imagenPrincipal.addEventListener("load", () => {
+                // La imagen principal se ha cargado correctamente, muestra la imagen principal
+                imagenPrincipal.style.display = "block";
+                imagenRespaldo.style.display = "none";
+            });
+
+            // Agrega un evento 'error' a la imagen principal
+            imagenPrincipal.addEventListener("error", () => {
+                // Hubo un error al cargar la imagen principal, oculta la imagen principal y muestra la imagen de respaldo
+                imagenPrincipal.style.display = "none";
+                imagenRespaldo.style.display = "block";
+            });
+        });
     </script>
 
 {% endblock %}
