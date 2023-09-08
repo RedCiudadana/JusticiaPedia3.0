@@ -25,6 +25,24 @@ permalink: "perfiles_candidaturas/index.html"
                                 <h1 class="titulo_slider">Candidaturas</h1>
                                 <p class="texto_slider">Candidatos a las Instituciones
                                 </p>
+								<!-- Filter by Institution -->
+								<div class="filter-by-institution">
+									<select id="institution-filter" class="filter">
+										<option value="all">Todos</option>
+										<option value="election-1">Comisión de Postulación del Procurador de los Derechos Humanos (PDH)</option>
+										<option value="election-2">Comisión de Postulación de Fiscal General y Jefe del Ministerio Público (MP)</option>
+										<option value="election-3">Comisión de Postulación de Contralor General de Cuentas (CGC)</option>
+										<option value="election-4">Comisión de Postulación del Director del Instituto de la Defensa Pública Penal (IDPP)</option>
+										<option value="election-5">Comisión de Postulación de Magistrados de la Corte Suprema de Justicia (CSJ)</option>
+										<option value="election-6">Comisión de Postulación de Magistrados de la Corte de Apelaciones (CA)</option>
+										<option value="election-7">Comisión de Postulación de Magistrados del Tribunal Supremo Electoral (TSE)</option>
+										<option value="election-8">Comisión de Corte Suprema de Justicia</option>
+										<option value="election-9">Comisión de Presidente de la República</option>
+										<option value="election-10">Comisión de Congreso de la República</option>
+										<option value="election-11">Comisión de Consejo Superior Universitario de la USAC</option>
+										<option value="election-12">Comisión de Colegio de Abogados de Guatemala</option>
+									</select>
+								</div>
 							</div>
 							
 							
@@ -41,7 +59,7 @@ permalink: "perfiles_candidaturas/index.html"
 
 							{% for perfil in collections.perfiles_candidatos %}
 
-							<div class="col-lg-3 col-sm-12 order-2 order-lg-1 text-center my-2">
+							<div class="col-lg-3 col-sm-12 order-2 order-lg-1 text-center my-2 cuadro_perfil_sup"  data-institution="{{perfil.data.perfiles.election}}">
 
 								<div class="cuadro_perfil h-100">
                                     {% if perfil.data.perfiles.fotoURL %}
@@ -50,7 +68,7 @@ permalink: "perfiles_candidaturas/index.html"
                                     <img src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png">
                                     {% endif %}
 									<div class="p-4">
-										<h1 class="my-2" style="height:50px">{{perfil.data.perfiles.nombre}}</h1>
+										<h1 class="my-2" style="height:50px">{{perfil.data.perfiles.nombre}} | {{perfil.data.perfiles.election}}</h1>
 										<a href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug | safe}}/index.html" class="btn btn2">Más Información<a>
 									</div>
 								</div>
@@ -68,4 +86,37 @@ permalink: "perfiles_candidaturas/index.html"
             </div>
         </section>
 
+{% endblock %}
+
+
+{% block body_javascripts %}
+		<script>
+		// JavaScript for filtering by institution
+		document.addEventListener('DOMContentLoaded', function () {
+			const institutionFilter = document.getElementById('institution-filter');
+			
+			institutionFilter.addEventListener('change', function () {
+				const selectedInstitution = institutionFilter.value;
+				
+				// Hide all profiles
+				const profileElements = document.querySelectorAll('.cuadro_perfil_sup');
+				profileElements.forEach(function (profileElement) {
+					profileElement.style.display = 'none';
+				});
+				
+				// Show profiles that match the selected institution or show all if "All" is selected
+				if (selectedInstitution === 'all') {
+					profileElements.forEach(function (profileElement) {
+						profileElement.style.display = 'block';
+					});
+				} else {
+					const matchingProfiles = document.querySelectorAll(`[data-institution="${selectedInstitution}"]`);
+					matchingProfiles.forEach(function (matchingProfile) {
+						matchingProfile.style.display = 'block';
+					});
+				}
+			});
+		});
+
+		</script>
 {% endblock %}

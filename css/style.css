@@ -20236,3 +20236,9 @@ label.checkbox {
 .btn-facebook:hover{
   color: #fff!important;
 }
+
+.filter{
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+}

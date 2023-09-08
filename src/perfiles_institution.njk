@@ -25,6 +25,24 @@ permalink: "perfiles_institucionales/index.html"
                                 <h1 class="titulo_slider">Sector Justicia</h1>
                                 <p class="texto_slider">Autoridades de las Instituciones
                                 </p>
+								<!-- Filter by Institution -->
+								<div class="filter-by-institution">
+									<select id="institution-filter" class="filter">
+										<option value="all">Todos</option>
+										<option value="institution-1">Corte Suprema de Justicia (CSJ)</option>
+										<option value="institution-2">Corte de Apelaciones (CA)</option>
+										<option value="institution-3">Juzgados de Primera Instancia</option>
+										<option value="institution-4">Juzgados de Paz o Menores</option>
+										<option value="institution-5">Consejo de la Carrera Judicial</option>
+										<option value="institution-6">Corte de Constitucionalidad (CC)</option>
+										<option value="institution-7">Ministerio Público (MP)</option>
+										<option value="institution-8">Instituto Nacional de Ciencias Forenses</option>
+										<option value="institution-9">Procurador de los Derechos Humanos (PDH)</option>
+										<option value="institution-10">Contraloria General de Cuentas (CGC)</option>
+										<option value="institution-11">Instituto de la Defensa Pública Penal (IDPP)</option>
+										<option value="institution-12">Tribunal Supremo Electoral (TSE)</option>
+									</select>
+								</div>
 							</div>
 							
 							
@@ -41,7 +59,7 @@ permalink: "perfiles_institucionales/index.html"
 
 							{% for perfil in collections.perfiles_institucionales %}
 
-							<div class="col-lg-3 col-sm-12 order-2 order-lg-1 text-center my-2">
+							<div class="col-lg-3 col-sm-12 order-2 order-lg-1 text-center my-2 cuadro_perfil_sup"  data-institution="{{perfil.data.perfiles.institution}}">
 
 								<div class="cuadro_perfil h-100">
                                     {% if perfil.data.perfiles.fotoURL %}
@@ -68,4 +86,36 @@ permalink: "perfiles_institucionales/index.html"
             </div>
         </section>
 
+{% endblock %}
+
+{% block body_javascripts %}
+		<script>
+		// JavaScript for filtering by institution
+		document.addEventListener('DOMContentLoaded', function () {
+			const institutionFilter = document.getElementById('institution-filter');
+			
+			institutionFilter.addEventListener('change', function () {
+				const selectedInstitution = institutionFilter.value;
+				
+				// Hide all profiles
+				const profileElements = document.querySelectorAll('.cuadro_perfil_sup');
+				profileElements.forEach(function (profileElement) {
+					profileElement.style.display = 'none';
+				});
+				
+				// Show profiles that match the selected institution or show all if "All" is selected
+				if (selectedInstitution === 'all') {
+					profileElements.forEach(function (profileElement) {
+						profileElement.style.display = 'block';
+					});
+				} else {
+					const matchingProfiles = document.querySelectorAll(`[data-institution="${selectedInstitution}"]`);
+					matchingProfiles.forEach(function (matchingProfile) {
+						matchingProfile.style.display = 'block';
+					});
+				}
+			});
+		});
+
+		</script>
 {% endblock %}
