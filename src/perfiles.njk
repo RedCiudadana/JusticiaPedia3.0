@@ -47,13 +47,19 @@ tags:
                     </div>
 
                     <div class="col-lg-4 px-4">
-                      <h1 class="titulo_cuadros">{{perfiles.nombre}}</h1>
-                      <p class="subtitulo_cuadros">Institución: {{perfiles.seleccionarInstitución}}</p>
-                      <p class="subtitulo_cuadros">Puesto: {{perfiles.puesto}}</p>
+                      <h1 class="titulo_cuadros mb-4">{{perfiles.nombre}}</h1>
+                      <p class="subtitulo_cuadros"><b>Institución:</b> {{perfiles.seleccionarInstitución}}</p>
+                      <div class="linea2"></div>
+                      <p class="subtitulo_cuadros"><b>Puesto:</b> {{perfiles.puesto}}</p>
+                      <div class="linea2"></div>
+                      <p class="subtitulo_cuadros"><b>Profesión:</b> {{perfiles.profesion}}</p>
+                      <div class="linea2"></div>
+                      <p class="subtitulo_cuadros"><b>No. Colegiado:</b> {{perfiles.nocolegiado}}</p>
                     </div>
 
-                    <div class="col-lg-4 px-4">
-                      <a class="btn btn3 w-100 mb-4" href="{{perfiles.cv}}">CV</a>
+                    <div class="col-lg-3 text-center px-4" style>
+                      <h5 class="titulo_cuadros2  mb-4">Documentos</h5>
+                      <a class="btn btn3 w-100 mb-2" href="{{perfiles.cv}}">Hoja de Vida (pdf)</a>
                       <a class="btn btn3 w-100" href="{{perfiles.expediente}}">Expediente</a>
 
                     </div>

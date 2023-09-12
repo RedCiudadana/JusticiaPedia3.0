@@ -20242,3 +20242,14 @@ label.checkbox {
   padding: 15px 20px;
   border-radius: 10px;
 }
+
+b{
+  font-family: 'Montserrat-Bold';
+  font-weight: 800!important;
+}
+
+.linea2{
+  height: 0.5px;
+  width: 100%;
+  background-color: #ccc;
+}
