@@ -39,7 +39,7 @@ tags:
                   <button class="tablinks h-100" onclick="openTab(event, 'institucion')" id="defaultOpen"><img src="/elementos/ICONOS/ICONOS/11.png">Institución</button>
                 </div>
                 <div class="col-lg-2-5 mr-2">
-                  <button class="tablinks h-100" onclick="openTab(event, 'autoridades')"><img src="/elementos/ICONOS/ICONOS/12.png">Autoridades</button>
+                  <button class="tablinks h-100 autoridades" onclick="openTab(event, 'autoridades')"><img src="/elementos/ICONOS/ICONOS/12.png">Autoridades</button>
                 </div>
                 {% set divPrinted = false %}
                 {% for comision in collections.comisiones %}
@@ -113,6 +113,43 @@ tags:
                   </div>
                   <div class="col-lg-12 py-4 background-perfiles2">
                     <p>{{sectorjusticia.vision}}</p>
+                  </div>
+                </div>
+
+                <div class="my-4">
+                  <div class="col-lg-12 py-2 background-perfiles-header">
+                    <img src="/elementos/ICONOS/ICONOS/04.png">
+                    <h1 class="text-white">Autoridades</h1>
+                  </div>
+                  <div class="col-lg-12 py-4 background-perfiles2">
+                    <div class="row">
+                      {% for perfil in collections.perfiles | filtrarPorInstitucion(sectorjusticia.id) | limit(4) %}
+                      <div class="col-lg-3 col-sm-12 order-2 order-lg-1 text-center my-2">
+
+                        <div class="cuadro_perfil h-100">
+                          <div class="imagen-container">
+                            {% if perfil.data.perfiles.fotoURL %}
+                            <img class="imagen-principal" src="{{perfil.data.perfiles.fotoURL}}" alt="Imagen Principal" />
+                            <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" style="display: none;" />
+                            {% else %}
+                            <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+                            {% endif %}
+                          </div>
+
+                          <div class="p-4">
+                            <h1 class="my-2">{{perfil.data.perfiles.nombre}}</h1>
+                            <a href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug}}/index.html" class="btn btn2">Más Información<a>
+                          </div>
+                        </div>
+              
+                      </div>
+                      {% endfor %}
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12 text-center">
+                        <button class="btn my-4" onclick="openTab(event, 'autoridades')">Ver todos los perfiles</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -247,18 +284,24 @@ tags:
 {% block body_javascripts %}
 
     <script>
-      function openTab(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
+      function openTab(evt, tab) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tab).style.display = "block";
+        evt.currentTarget.className += " active";
+        window.scrollTo(0, 0);
+        
+        if(tab === "autoridades"){
+          autoridades = document.getElementsByClassName("autoridades");
+          autoridades[0].classList.add("active")
+        }
       }
       document.getElementById("defaultOpen").click();
     </script>
