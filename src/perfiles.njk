@@ -29,7 +29,31 @@ tags:
 						<div class="row">
 
               <div class="col-lg-12 my-4 py-4 px-4 background-perfiles">
-                <a href="/index.html" style="font-weight:600">Inicio</a> / <a href="/sectorjusticia/1/index.html" style="font-weight:600">Sector Justicia</a> / <a href="" style="pointer-events:none;font-weight:600">{{perfiles.nombre}}</a>
+                {% if perfiles.institution %}
+
+                {% for institucion in collections.sectorjusticia%}
+                {% if institucion.data.sectorjusticia.id == perfiles.institution %}
+                <a href="/index.html" style="font-weight:600">Inicio</a> / <a href="{{institucion.url}}" style="font-weight:600">{{institucion.data.sectorjusticia.nombre}}</a> / <a href="" style="pointer-events:none;font-weight:600">{{perfiles.nombre}}</a>
+                {% endif %}
+                {% endfor %}
+
+                {% elif perfiles.election %}
+
+                {% for institucion in collections.comisiones%}
+                {% if institucion.data.comisiones.id == perfiles.election %}
+                <a href="/index.html" style="font-weight:600">Inicio</a> / <a href="{{institucion.url}}" style="font-weight:600">{{institucion.data.comisiones.nombre}}</a> / <a href="" style="pointer-events:none;font-weight:600">{{perfiles.nombre}}</a>
+                {% endif %}
+                {% endfor %}
+
+                {% elif perfiles.comission %}
+
+                {% for institucion in collections.comisiones%}
+                {% if institucion.data.comisiones.id == perfiles.comission %}
+                <a href="/index.html" style="font-weight:600">Inicio</a> / <a href="{{institucion.url}}" style="font-weight:600">{{institucion.data.comisiones.nombre}}</a> / <a href="" style="pointer-events:none;font-weight:600">{{perfiles.nombre}}</a>
+                {% endif %}
+                {% endfor %}
+
+                {% endif %}
               </div>
 
               <div class="tab p-1">
@@ -42,8 +66,12 @@ tags:
 
                 <div class="col-lg-12 my-4 py-4 background-perfiles">
                   <div class="row">
-                    <div class="col-lg-4">
-                      <img class="img_institucion" src="{{perfiles.fotoURL}}">
+                    <div class="col-lg-4 text-center">
+                      {% if perfiles.fotoURL %}
+                      <img src="{{perfiles.fotoURL}}">
+                      {% else %}
+                      <img style="width:250px;margin:auto" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png">
+                      {% endif %}
                     </div>
 
                     <div class="col-lg-4 px-4">
@@ -69,7 +97,7 @@ tags:
 
                 <div class="my-4">
                   <div class="col-lg-12 py-2 background-perfiles-header">
-                    <img src="/elementos/ICONOS/ICONOS/08.png">
+                    <img src="/elementos/ICONOS/ICONOS/09.png">
                     <h1 class="text-white">Experiencia Profesional</h1>
                   </div>
                   <div class="col-lg-12 py-4 background-perfiles2">
@@ -79,7 +107,7 @@ tags:
 
                 <div class="my-4">
                   <div class="col-lg-12 py-2 background-perfiles-header">
-                    <img src="/elementos/ICONOS/ICONOS/09.png">
+                    <img src="/elementos/ICONOS/ICONOS/08.png">
                     <h1 class="text-white">Experiencia Académica</h1>
                   </div>
                   <div class="col-lg-12 py-4 background-perfiles2">
@@ -87,7 +115,25 @@ tags:
                   </div>
                 </div>
 
+                <div class="my-4">
+                  <div class="col-lg-12 py-2 background-perfiles-header">
+                    <img src="/elementos/ICONOS/ICONOS/10.png">
+                    <h1 class="text-white">Fuentes de Información</h1>
+                  </div>
+                  <div class="col-lg-12 py-4 background-perfiles2">
+                    <p>{{perfiles.fuenteTexto}}</p>
+                  </div>
+                </div>
 
+                <div class="my-4">
+                  <div class="col-lg-12 py-2 background-perfiles-header">
+                    <img src="/elementos/ICONOS/ICONOS/14.png">
+                    <h1 class="text-white">Proyección Humana</h1>
+                  </div>
+                  <div class="col-lg-12 py-4 background-perfiles2">
+                    <p>No hay Información</p>
+                  </div>
+                </div>
                     
               </div>
 
