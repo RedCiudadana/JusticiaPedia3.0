@@ -40,7 +40,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Title" }
       - { name: "description", label: "Description" }
-      - { name: "link", label: "Enlace de video" }
+      - { name: "link", label: "Iframe de video" }
       - { name: "date", label: "Date", widget: "datetime" }
   - name: "proyectos"
     label: "Proyectos"
