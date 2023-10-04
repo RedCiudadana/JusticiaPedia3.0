@@ -1,0 +1,248 @@
+---
+permalink: "especiales/eleccionmp/index.html"
+---
+
+{% extends "src/base.njk" %}
+
+{% block head %}
+<title>Elección MP | JusticiaPedia</title>
+
+{% endblock %}
+
+{% block content %}
+
+        <section id="content px-4">
+			<div class="content-wrap">
+
+				<!-- Slider
+				============================================= -->
+
+				<div class="section m-0 py-6" style="background-color: #90c1db">
+                    <img src="/elementos/ICONOS/JUSTICIAPEDIA_02-13.png" class="img_especial">
+					<div class="container pb-6">
+						<div class="row pb-6">
+
+							<div class="col-lg-6 col-sm-12 order-2 order-lg-1 text-start pb-6">
+                                <h1 class="titulo_slider mb-2">Elección MP</h1>
+                                <p class="texto_slider mb-4">Lorem ipsum dolor sit amet, consecteur adipiscing elit, Lorem ipsum dolor sit amet, consecteur adipiscing elit,
+                                    Lorem ipsum dolor sit amet, consecteur adipiscing elit,
+                                </p>
+                                <a href="#" class="btn_especiales">Suscribirse <i class="fa-solid fa-caret-down"></i></a>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+
+
+                <!-- Content
+				============================================= -->
+
+				<div class="section m-0 py-6" style="background-color: #f1f4fa">
+
+                    <div class="container">
+                        <div class="row p-4" style="background-color: #fff; /*position:relative;top:-150px;*/">
+                            <div class="col-lg-12">
+                                <h1 style="font-size:30px">Personas de Interés</h1>
+                            </div>
+
+                            {% for perfil in collections.perfiles | filtrarPorComision("election-2") %}
+                            {% if perfil.data.perfiles.nombre === "Silvia Patricia Valdés Quezada" or perfil.data.perfiles.nombre === "Lorena Isabel Flores Estrada" or perfil.data.perfiles.nombre === "Henry Manuel Arreaga Contreras" %}
+                            <div class="col-lg-3 col-sm-12 order-2 order-lg-1 text-center my-2">
+
+                                <div class="cuadro_perfil2 h-100">
+                                    <div class="imagen-container">
+                                    {% if perfil.data.perfiles.fotoURL %}
+                                    <img class="imagen-principal" src="{{perfil.data.perfiles.fotoURL}}" alt="Imagen Principal" />
+                                    <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" style="display: none;" />
+                                    {% else %}
+                                    <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+                                    {% endif %}
+                                    </div>
+
+                                    <div class="p-4">
+                                    <h1 class="mb-4">{{perfil.data.perfiles.nombre}}</h1>
+                                    <a href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug}}/index.html" class="btn_especiales">Ver Perfil<i class="fa-solid fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                            {% for perfil in collections.perfiles | filtrarPorEleccion("election-2") %}
+                            {% if perfil.data.perfiles.nombre === "María Consuelo Porras Argueta"%}
+                            <div class="col-lg-3 col-sm-12 order-2 order-lg-1 text-center my-2">
+
+                                <div class="cuadro_perfil2 h-100">
+                                    <div class="imagen-container">
+                                    {% if perfil.data.perfiles.fotoURL %}
+                                    <img class="imagen-principal" src="{{perfil.data.perfiles.fotoURL}}" alt="Imagen Principal" />
+                                    <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" style="display: none;" />
+                                    {% else %}
+                                    <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+                                    {% endif %}
+                                    </div>
+
+                                    <div class="p-4">
+                                    <h1 class="mb-4">{{perfil.data.perfiles.nombre}}</h1>
+                                    <a href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug}}/index.html" class="btn_especiales">Ver Perfil<i class="fa-solid fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+ 
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row py-4">
+                            <div class="col-lg-12">
+                                <h1 style="font-size:30px">Candidaturas</h1>
+                            </div>
+                            <div class="col-lg-12 my-2">
+                                
+                                <div class="table-container">
+                                    <div class="table-header">
+                                        <div class="table-cell"><i class="fa-regular fa-user" style="padding-right:5px"></i>Candidato</div>
+                                        <div class="table-cell"><i class="fa-solid fa-lock" style="padding-right:5px"></i>Cargo</div>
+                                        <div class="table-cell">Lorem</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                    <div class="table-body">
+                                        {% for perfil in collections.perfiles | filtrarPorEleccion("election-2") | limit(5) %}
+                                        <div class="table-row">
+                                            <div class="table-cell">
+                                                {% if perfil.data.perfiles.fotoURL %}
+                                                <img class="imagen-principal" src="{{perfil.data.perfiles.fotoURL}}" alt="Imagen Principal" />
+                                                <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" style="display: none;" />
+                                                {% else %}
+                                                <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+                                                {% endif %}
+                                                {{perfil.data.perfiles.nombre}}
+                                            </div>
+                                            <div class="table-cell">{{perfil.data.perfiles.puesto}}</div>
+                                            <div class="table-cell">Lorem ipsum 1</div>
+                                            <div class="table-cell">
+                                                <a href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug}}/index.html" class="btn_especiales">Ver Perfil <i class="fa-solid fa-caret-right"></i></a>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                <a class="btn btn2" href="/comision/comision-de-postulacion-de-fiscal-general-y-jefe-del-ministerio-publico-(mp)/index.html">Ver más perfiles</a>
+                            </div>
+                        </div>
+
+
+                        <div class="row py-4">
+                            <div class="col-lg-12">
+                                <h1 style="font-size:30px">Comisionados</h1>
+                            </div>
+                            <div class="col-lg-12 my-2">
+                                
+                                <div class="table-container">
+                                    <div class="table-header">
+                                        <div class="table-cell"><i class="fa-regular fa-user" style="padding-right:5px"></i>Comisionado</div>
+                                        <div class="table-cell"><i class="fa-solid fa-lock" style="padding-right:5px"></i>Cargo</div>
+                                        <div class="table-cell">Lorem</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                    <div class="table-body">
+                                        {% for perfil in collections.perfiles | filtrarPorComision("election-2") | limit(5) %}
+                                        <div class="table-row">
+                                            <div class="table-cell">
+                                                {% if perfil.data.perfiles.fotoURL %}
+                                                <img class="imagen-principal" src="{{perfil.data.perfiles.fotoURL}}" alt="Imagen Principal" />
+                                                <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" style="display: none;" />
+                                                {% else %}
+                                                <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+                                                {% endif %}
+                                                {{perfil.data.perfiles.nombre}}
+                                            </div>
+                                            <div class="table-cell">{{perfil.data.perfiles.puesto}}</div>
+                                            <div class="table-cell">Lorem ipsum 1</div>
+                                            <div class="table-cell">
+                                                <a href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug}}/index.html" class="btn_especiales">Ver Perfil <i class="fa-solid fa-caret-right"></i></a>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                <a class="btn btn2" href="/comision/comision-de-postulacion-de-fiscal-general-y-jefe-del-ministerio-publico-(mp)/index.html">Ver más perfiles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row mb-4">
+                            <div class="col-lg-12">
+                                <h1 style="font-size:30px">Lo Último</h1>
+                            </div>
+                        </div>
+                        {% for novedad in collections.novedades | reverse | limit(1) %}
+                        <div class="row" style="background-color:#fff">
+                            <div class="col-lg-6 p-0">
+                                <img src="{{ novedad.data.image }}" alt="novedad" class="h-100">
+                            </div>
+                            <div class="col-lg-6 p-0">
+                                <div class="p-4 my-auto" style="text-align:left">
+									<h5 class="font-bold text-lg">
+									{{novedad.data.title }}
+									</h5>
+									<span class="text-sm">
+									{{novedad.data.date | dateFormat('DD/MM/YYYY')}}
+									</span><br>
+									<span class="text-sm">
+									{{novedad.data.description}}
+									</span>
+                                    <br><br>
+                                    <span class="text-sm">
+                                    <a href="{{novedad.url}}" class="btn_especiales my-2">Ver Noticia <i class="fa-solid fa-caret-right"></i></a>
+                                    </span>
+								</div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                        <div class="row my-4" >
+                        {% for novedad in collections.novedades | reverse | limit(2) %}
+                        
+                            <div class="col-lg-6" >
+                                <div style="background-color:#fff;height:100%">
+                                    <img src="{{ novedad.data.image }}" alt="novedad">
+                                    <div class="p-4 my-auto" style="text-align:left">
+                                        <h5 class="font-bold text-lg">
+                                        {{novedad.data.title }}
+                                        </h5>
+                                        <span class="text-sm">
+                                        {{novedad.data.date | dateFormat('DD/MM/YYYY')}}
+                                        </span><br>
+                                        <span class="text-sm">
+                                        {{novedad.data.description}}
+                                        </span>
+                                        <br><br>
+                                        <span class="text-sm">
+                                        <a href="{{novedad.url}}" class="btn_especiales my-2">Ver Noticia <i class="fa-solid fa-caret-right"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        {% endfor %}
+                        </div>
+                    </div>
+      
+				</div>
+
+            </div>
+        </section>
+
+{% endblock %}
