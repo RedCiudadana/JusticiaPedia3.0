@@ -183,7 +183,7 @@ permalink: "especiales/eleccionmp/index.html"
                                 <h1 style="font-size:30px">Lo Último</h1>
                             </div>
                         </div>
-                        {% for novedad in collections.novedades | reverse | limit(1) %}
+                        {% for novedad in collections.novedades | reverse | filtrarPorEleccionBlogs("EleccionMP") | limit(1) %}
                         <div class="row" style="background-color:#fff">
                             <div class="col-lg-6 p-0">
                                 <img src="{{ novedad.data.image }}" alt="novedad" class="h-100">
@@ -209,7 +209,7 @@ permalink: "especiales/eleccionmp/index.html"
                         {% endfor %}
 
                         <div class="row my-4" >
-                        {% for novedad in collections.novedades | reverse | limit(2) %}
+                        {% for novedad in collections.novedades | reverse | filtrarPorEleccionBlogs("EleccionMP") | limitPart(1,3) %}
                         
                             <div class="col-lg-6" >
                                 <div style="background-color:#fff;height:100%">

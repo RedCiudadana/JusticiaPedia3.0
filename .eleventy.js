@@ -31,6 +31,13 @@ module.exports = function (eleventyConfig) {
         return variable;
     });
 
+    eleventyConfig.addFilter("filtrarPorEleccionBlogs", function(coleccion, election) {
+        if (!coleccion || !election) {
+            return [];
+        }
+        return coleccion.filter(item => item.data.tipo_eleccion === election);
+    });
+
     eleventyConfig.addFilter("filtrarPorInstitucion", function(coleccion, id) {
         if (!coleccion || !id) {
             return [];

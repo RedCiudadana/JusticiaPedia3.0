@@ -29,7 +29,7 @@ permalink: "index.html"
 						<div class="row">
 
 							<div class="col-lg-8 col-sm-12 order-1 order-lg-2 my-4">
-								{% for novedad in collections.novedades | limit(1)%}
+								{% for novedad in collections.novedades | reverse | limit(1)%}
 								<div class="novedad_principal mb-4">
 									<img src="{{novedad.data.image}}">
 									<!--h4>Destacado</h4-->
@@ -40,7 +40,7 @@ permalink: "index.html"
 								{% endfor%}
 							</div>
 							<div class="col-lg-4 col-sm-12 order-3 order-lg-3 my-4">
-								{% for novedad in collections.novedades | limitPart(1,2) %}
+								{% for novedad in collections.novedades | reverse | limitPart(1,2) %}
 								<div class="novedad_secundaria_lateral mb-4">
 									<img src="{{novedad.data.image}}">
 									<a href="{{novedad.url}}"><h1>{{novedad.data.title}}</h1></a>
@@ -48,7 +48,7 @@ permalink: "index.html"
 									<i>Escrito por: &nbsp{{novedad.data.autor}}</i>
 								</div>
 								{% endfor%}
-								{% for novedad in collections.novedades | limitPart(1,2) %}
+								{% for novedad in collections.novedades | reverse | limitPart(1,2) %}
 								<div class="novedad_terciaria_lateral mt-4 mb-4">
 									<a href="{{novedad.url}}"><h1>{{novedad.data.title}}</h1></a>
 									<p>{{novedad.data.description}}</p>
