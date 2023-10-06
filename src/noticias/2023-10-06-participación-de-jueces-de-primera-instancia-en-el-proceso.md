@@ -1,6 +1,6 @@
 ---
 title: Participación de jueces de primera instancia en el proceso
-image: /images/posts/web_mp-15.png
+image: /images/posts/justiciapedia_02-09.png
 description: Se presentó un amparo para evitar que la Comisión permita la
   participación de jueces de primera instancia que no tienen otra fuente para
   ejercer la profesión de abogacía.
