@@ -1,6 +1,6 @@
 ---
 title: ¿Cómo se conforma la Comisión de postulación y quiénes son?
-image: /images/posts/web_mp-17.png
+image: /images/posts/justiciapedia_02-09.png
 description: La Comisión de Postulación es el órgano principal encargado de
   recibir las postulaciones, evaluarlas, ponderarlas y crear una nómina de 6
   postulaciones para enviarlas al Presidente
