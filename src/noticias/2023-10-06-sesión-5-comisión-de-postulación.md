@@ -1,6 +1,6 @@
 ---
 title: "Sesión 5: Comisión de Postulación"
-image: /images/posts/web_mp-16.png
+image: /images/posts/justiciapedia_02-09.png
 description: La quinta sesión las y los Comisionados conocieron sobre las
   pruebas de descargo sobre los expedientes excluidos en la sesión anterior. En
   total se habían excluido 12 expedientes, de los cuáles 10 aspirantes

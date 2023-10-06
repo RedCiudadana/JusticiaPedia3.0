@@ -1,6 +1,6 @@
 ---
 title: "Boletín #3 - Avances del proceso. Segunda semana de febrero"
-image: /images/posts/web_mp-15.png
+image: /images/posts/justiciapedia_02-09.png
 description: El proceso para la elección de la o el siguiente Fiscal General
   continuó en la segunda semana de febrero con las últimas preparaciones y el
   inicio de recepción de expedientes.
