@@ -1,6 +1,6 @@
 ---
 title: Avances del Proceso - Enero 2022
-image: /images/posts/web_mp-17.png
+image: /images/posts/justiciapedia_02-09.png
 description: El proceso de elección de Fiscal General y Jefe del Ministerio
   Público ya inició.
 tipo_eleccion: EleccionMP
