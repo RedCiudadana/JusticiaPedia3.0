@@ -1,6 +1,6 @@
 ---
 title: "Sesión 1: Comisión de Postulación"
-image: /images/posts/web_mp-16.png
+image: /images/posts/justiciapedia_02-09.png
 description: "La primera sesión de la Comisión se llevó a cabo en el Palacio de
   Justicia de la Corte Suprema de Justicia y se definió como la sede de la
   Comisión. En esta sesión se eligió al Mgtr. Roberto Aragón Solé como
