@@ -20288,6 +20288,9 @@ b{
   top: 10px;
 }
 
+.justify-content-end-custom{
+  justify-content: end!important;
+}
 
 @media only screen and (max-width: 960px) {
   .img_especial {
@@ -20295,6 +20298,9 @@ b{
   }
   .table-row{
     display: block!important;
+  }
+  .justify-content-end-custom{
+    justify-content: start!important;
   }
 }
 
