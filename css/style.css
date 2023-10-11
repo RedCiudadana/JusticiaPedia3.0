@@ -1184,7 +1184,7 @@ span.middot {
 
 .bg-color,
 .bg-color #header-wrap {
-  background-color: #E86762 !important;
+  background-color: #e0a892 !important;
 }
 
 .color {
@@ -16183,7 +16183,7 @@ body:not(.device-touch) #gotoTop {
 }
 
 #gotoTop:hover {
-  background-color: #E86762;
+  background-color: #e0a892;
 }
 
 /* ----------------------------------------------------------------
@@ -19506,7 +19506,7 @@ label.checkbox {
   padding: 20px;
   background: #fff;
   border-radius: 50%;
-  color: #E86762!important;
+  color: #e0a892!important;
   width: 100px;
   height: 100px;
   font-size: 35px;
@@ -19591,7 +19591,7 @@ label.checkbox {
 }
 
 .start-box-active{
-  background-color: #E86762;
+  background-color: #e0a892;
   border-radius: 10px;
   padding: 5%;
   height: 100%;
@@ -19669,7 +19669,7 @@ label.checkbox {
 }
 
 .novedad_principal h1:hover{
-  color: #E86762!important;
+  color: #e0a892!important;
 }
 
 .novedad_principal p{
@@ -19710,7 +19710,7 @@ label.checkbox {
 }
 
 .novedad_secundaria_centro h1:hover{
-  color: #E86762!important;
+  color: #e0a892!important;
 }
 
 .novedad_secundaria_centro .izquierda p{
@@ -19745,7 +19745,7 @@ label.checkbox {
 }
 
 .novedad_secundaria_lateral h1:hover{
-  color: #E86762!important;
+  color: #e0a892!important;
 }
 
 .novedad_secundaria_lateral p{
@@ -19775,7 +19775,7 @@ label.checkbox {
 }
 
 .novedad_terciaria_lateral h1:hover{
-  color: #E86762!important;
+  color: #e0a892!important;
 }
 
 .novedad_terciaria_lateral p{
@@ -19932,17 +19932,17 @@ label.checkbox {
 }
 
 .pagination li.current a {
-  background-color: #E86762;
+  background-color: #e0a892;
   color: #fff;
 }
 
 .pagination li a:hover {
-  background-color: #E86762;
+  background-color: #e0a892;
   color: #fff!important;
 }
 
 [aria-current] {
-  background-color: #E86762!important;
+  background-color: #e0a892!important;
   color: #fff!important;
 }
 
