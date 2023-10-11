@@ -20073,7 +20073,7 @@ label.checkbox {
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: start;
-  box-shadow: 2px 2px 2px #ddd;
+  box-shadow: 2px 2px 2px #e7e7e7;
 }
 
 .cuadro_perfil2 img{
@@ -20278,8 +20278,8 @@ b{
 }
 
 .btn_especiales:hover{
-  background-color: #fee48b;
-  color: #5f5d58!important;
+  background-color: #293c4c;
+  color: #fff!important;
 }
 
 .img_especial{

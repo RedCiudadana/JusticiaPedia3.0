@@ -22,8 +22,8 @@ permalink: "especiales/eleccionmp/index.html"
 					<div class="container pb-6">
 						<div class="row">
 
-							<div class="col-lg-6 col-sm-12 order-2 order-lg-1 text-start">
-                                <h1 class="titulo_slider mb-2">Elección MP</h1>
+							<div class="col-lg-6 col-sm-12 order-2 order-lg-1 text-start pt-4">
+                                <img src="/elementos/logotipos/elmp.png" style="width:50%">
                                 <p class="texto_slider mb-4">Lorem ipsum dolor sit amet, consecteur adipiscing elit, Lorem ipsum dolor sit amet, consecteur adipiscing elit,
                                     Lorem ipsum dolor sit amet, consecteur adipiscing elit,
                                 </p>
@@ -107,6 +107,7 @@ permalink: "especiales/eleccionmp/index.html"
                                 
                                 <div class="table-container">
                                     <div class="table-header">
+                                        <div class="table-cell" style="flex:0.3"></div>
                                         <div class="table-cell"><i class="fa-regular fa-user" style="padding-right:5px"></i>Candidato</div>
                                         <div class="table-cell"><i class="fa-solid fa-lock" style="padding-right:5px"></i>Cargo</div>
                                         <div class="table-cell"></div>
@@ -114,15 +115,15 @@ permalink: "especiales/eleccionmp/index.html"
                                     <div class="table-body">
                                         {% for perfil in collections.perfiles | filtrarPorEleccion("election-2") | limit(5) %}
                                         <div class="table-row">
-                                            <div class="table-cell">
+                                            <div class="table-cell" style="flex:0.3">
                                                 {% if perfil.data.perfiles.fotoURL %}
                                                 <img class="imagen-principal" src="{{perfil.data.perfiles.fotoURL}}" alt="Imagen Principal" />
                                                 <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" style="display: none;" />
                                                 {% else %}
                                                 <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
                                                 {% endif %}
-                                                {{perfil.data.perfiles.nombre}}
                                             </div>
+                                            <div class="table-cell"> {{perfil.data.perfiles.nombre}}</div>
                                             <div class="table-cell">{{perfil.data.perfiles.puesto}}</div>
                                             <div class="table-cell" style="display:block;text-align:center">
                                                 <a href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug}}/index.html" class="btn_especiales">Ver Perfil <i class="fa-solid fa-caret-right"></i></a>
@@ -132,6 +133,7 @@ permalink: "especiales/eleccionmp/index.html"
                                     </div>
                                 </div>
                             </div>
+                            <div style="height:40px;width:100%"></div>
                             <div class="col-lg-12 text-center">
                                 <a class="btn_especiales" href="/comision/comision-de-postulacion-de-fiscal-general-y-jefe-del-ministerio-publico-(mp)/index.html">Ver más perfiles</a>
                             </div>
@@ -146,6 +148,7 @@ permalink: "especiales/eleccionmp/index.html"
                                 
                                 <div class="table-container">
                                     <div class="table-header">
+                                        <div class="table-cell" style="flex:0.3"></div>
                                         <div class="table-cell"><i class="fa-regular fa-user" style="padding-right:5px"></i>Comisionado</div>
                                         <div class="table-cell"><i class="fa-solid fa-lock" style="padding-right:5px"></i>Cargo</div>
                                         <div class="table-cell"></div>
@@ -153,15 +156,15 @@ permalink: "especiales/eleccionmp/index.html"
                                     <div class="table-body">
                                         {% for perfil in collections.perfiles | filtrarPorComision("election-2") | limit(5) %}
                                         <div class="table-row">
-                                            <div class="table-cell">
+                                            <div class="table-cell" style="flex:0.3">
                                                 {% if perfil.data.perfiles.fotoURL %}
                                                 <img class="imagen-principal" src="{{perfil.data.perfiles.fotoURL}}" alt="Imagen Principal" />
                                                 <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" style="display: none;" />
                                                 {% else %}
                                                 <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
                                                 {% endif %}
-                                                {{perfil.data.perfiles.nombre}}
                                             </div>
+                                            <div class="table-cell">{{perfil.data.perfiles.nombre}}</div>
                                             <div class="table-cell">{{perfil.data.perfiles.puesto}}</div>
                                             <div class="table-cell" style="display:block;text-align:center">
                                                 <a href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug}}/index.html" class="btn_especiales">Ver Perfil <i class="fa-solid fa-caret-right"></i></a>
@@ -171,6 +174,7 @@ permalink: "especiales/eleccionmp/index.html"
                                     </div>
                                 </div>
                             </div>
+                            <div style="height:40px;width:100%"></div>
                             <div class="col-lg-12 text-center">
                                 <a class="btn_especiales" href="/comision/comision-de-postulacion-de-fiscal-general-y-jefe-del-ministerio-publico-(mp)/index.html">Ver más perfiles</a>
                             </div>
@@ -184,11 +188,11 @@ permalink: "especiales/eleccionmp/index.html"
                             </div>
                         </div>
                         {% for novedad in collections.novedades | reverse | filtrarPorEleccionBlogs("EleccionMP") | limit(1) %}
-                        <div class="row" style="background-color:#fff">
-                            <div class="col-lg-6 p-0">
+                        <div class="row">
+                            <div class="col-lg-6">
                                 <img src="{{ novedad.data.image }}" alt="novedad" class="h-100">
                             </div>
-                            <div class="col-lg-6 p-0">
+                            <div class="col-lg-6" style="background-color:#fff">
                                 <div class="p-4 my-auto" style="text-align:left">
 									<h5 class="font-bold text-lg">
 									{{novedad.data.title }}
