@@ -35,7 +35,7 @@ permalink: "index.html"
 									<!--h4>Destacado</h4-->
 									<a href="{{novedad.url}}"><h1>{{novedad.data.title}}</h1></a>
 									<p>{{novedad.data.description}}</p>
-									<i>Escrito por: &nbsp{{novedad.data.autor}}</i>
+									<i style="color:#e0a892">Escrito por: &nbsp{{novedad.data.autor}}</i>
 								</div>
 								{% endfor%}
 							</div>
@@ -45,14 +45,14 @@ permalink: "index.html"
 									<img src="{{novedad.data.image}}">
 									<a href="{{novedad.url}}"><h1>{{novedad.data.title}}</h1></a>
 									<p>{{novedad.data.description}}</p>
-									<i>Escrito por: &nbsp{{novedad.data.autor}}</i>
+									<i style="color:#e0a892">Escrito por: &nbsp{{novedad.data.autor}}</i>
 								</div>
 								{% endfor%}
 								{% for novedad in collections.novedades | reverse | limitPart(1,2) %}
 								<div class="novedad_terciaria_lateral mt-4 mb-4">
 									<a href="{{novedad.url}}"><h1>{{novedad.data.title}}</h1></a>
 									<p>{{novedad.data.description}}</p>
-									<i>Escrito por: &nbsp{{novedad.data.autor}}</i>
+									<i style="color:#e0a892">Escrito por: &nbsp{{novedad.data.autor}}</i>
 								</div>
 								{% endfor%}
 
@@ -65,7 +65,7 @@ permalink: "index.html"
 
 				<!-- CAMBIAR A VIDEO -->
 
-				<div class="section py-6 m-0" style="background-color: #4c5761">
+				<div class="section py-4 m-0" style="background-color: #4c5761">
 					
 
 					<div class="container">

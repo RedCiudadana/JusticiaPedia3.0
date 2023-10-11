@@ -10184,17 +10184,17 @@ td.actions {
 }
 
 .btn:hover {
-  color: white!important; }
+  color: #fff!important; }
 
 .btn::before {
-  background: #e1a992 ;
+  background: #4d5760 ;
   bottom: 0;
   content: "";
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
-  border: 1px solid #e1a992 ;
+  border: 1px solid #4d5760 ;
   -webkit-transform: scaleY(0);
   -ms-transform: scaleY(0);
   transform: scaleY(0);
@@ -20173,11 +20173,12 @@ label.checkbox {
 	font-size: 16px;
 	width: 100%;
   border-radius: 10px;
+  transition: 0.2s;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-	background-color: #91c0db;
+	background-color: #4d5760!important;
 	color: #fff;
 }
   
@@ -20336,3 +20337,6 @@ b{
   text-align: center;
 }
 
+select{
+  width: 100%;
+}
