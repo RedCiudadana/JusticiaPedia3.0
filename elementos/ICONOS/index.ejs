@@ -1,0 +1,248 @@
+---
+title: EleccionMP
+---
+<div class="w-full bg-blue-300 py-16 relative">
+  <div class="max-w-screen-lg px-4 md:px-0 mx-auto">
+    <div class="grid grid-cols-9">
+      <div class="col-span-9 md:col-span-6 text-center md:text-left">
+        <h2 class="text-4xl font-bold text-white leading-tight">
+          Conoce todo sobre el proceso de elección del Fiscal General del Ministerio Público de Guatemala 
+        </h2>
+        <h3 class="text-3xl text-blue-900">¡Infórmate, interactúa e incide!</h3>
+      </div>
+      <div class="col-span-3"></div>
+    </div>
+  </div>
+  <img
+    src="/assets/images/MP_04.png"
+    alt="Lupa viendo Guatemala"
+    class="h-56 w-auto md:absolute right-0 top-8 ml-auto mt-4">
+</div>
+<div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6 text-center py-16 pb-0">
+  <h2 class="text-3xl font-bold">¿En qué etapa se encuentra el proceso?</h2>
+  <div class="grid grid-cols-9 gap-4 justify-center text-center pb-16">
+    <div class="col-span-8 md:col-start-3 md:col-span-6 mb-8">
+      
+    </div>
+    <div class="col-span-9 md:col-span-3 bg-gray-100 p-6 rounded-2xl">
+      <img src="/assets/images/iconos/CRONOGRAMA-10.png" alt="Personas" class="mx-auto h-28 w-28">
+      <h2 class="text-3xl font-bold">Paso 8</h2>
+      <h3 class="text-lg font-bold text-blue-300 pb-4">18 y 19 de Abril</h3>
+      <p class="text-lg font-normal">
+        Evaluación final y ponderación de los expedientes
+      </p>
+    </div>
+    <div class="col-span-9 md:col-span-3 bg-gray-100 p-6 rounded-2xl">
+      <img src="/assets/images/iconos/CRONOGRAMA-12.png" alt="Personas" class="mx-auto h-28 w-28">
+      <h2 class="text-3xl font-bold">Paso 9</h2>
+      <h3 class="text-lg font-bold text-blue-300 pb-4">20 de Abril</h3>
+      <p class="text-lg font-normal">
+        Elaboración de nómina con los 6 aspirantes
+      </p>
+    </div>
+    <div class="col-span-9 md:col-span-3 bg-blue-300 p-6 rounded-2xl">
+      <img src="/assets/images/iconos/10.png" alt="Personas" class="mx-auto h-28 w-28">
+      <h2 class="text-3xl font-bold">Paso 10</h2>
+      <h3 class="text-lg font-bold text-white pb-4">16 de Mayo 2022</h3>
+      <p class="text-lg font-normal">
+        El Presidente Alejandro Giammatei designo a Consuelo Porras Fiscal General del MP
+      </p>
+    </div>
+    <!--div class="col-span-8 md:col-span-2 bg-gray-100 p-6 rounded-2xl">
+      <img src="/assets/images/iconos/03.png" alt="Personas" class="mx-auto h-28 w-28">
+      <h2 class="text-3xl font-bold">Paso 4</h2>
+      <h3 class="text-lg font-bold text-blue-300 pb-4">22, 24 y 25 febrero </h3>
+      <p class="text-lg font-normal">
+        Revisión de expedientes
+      </p>
+    </div-->
+  </div>
+</div>
+<div class="w-full bg-gray-100">
+  <div class="max-w-screen-lg px-4 md:px-0 mx-auto">
+    <div class="grid grid-cols-9 gap-4 justify-center text-center py-16">
+      <% if (collections['podcastsHighlighted']) { %>
+          <% collections['podcastsHighlighted'].slice(0,1).forEach((podcast)=> { %>
+            <div class="col-span-9 md:col-span-4 text-left">
+              <h3 class="uppercase font-bold text-base tracking-wider">podcast</h3>
+              <h2 class="font-bold text-4xl"><%= podcast.data.title %></h2>
+              <br>
+              <p class="font-regular text-normal">
+                <%= podcast.data.description %>
+              </p>
+            </div>
+            <div class="col-span-9 md:col-span-5">
+              <iframe src="<%= podcast.data.link %>" width="100%"
+                height="232" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+          <% }) %>
+        <% } %>
+    </div>
+  </div>
+</div>
+<div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
+  <div class="grid grid-cols-9 gap-4 justify-center text-left py-16">
+    <div class="col-span-9 md:col-span-6">
+      <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Lo último</h4>
+      <div>
+        <% if (collections['Blog']) { %>
+          <% collections['Blog'].slice(-5).reverse().forEach((post)=> { %>
+            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current responsive">
+              <img src="<%= post.data.image %>" alt="Evento" class="w-36">
+              <div class="pl-8 my-auto">
+                <h5 class="font-bold text-lg">
+                  <%= post.data.title %>
+                </h5>
+                <span class="text-sm">
+                  <%= post.data.description %>
+                </span>
+              </div>
+            </a>
+          <% }) %>
+        <% } %>
+        <style>
+  
+          @media (max-width: 480px){
+              .responsive{
+                display:block!important;
+                margin: 1.5rem 0;
+              }
+
+              .responsive img{
+                margin:1.5rem auto;
+              }
+
+              .rifra{
+                margin:1.5rem auto;
+              } 
+          }
+  
+        </style>
+      </div>
+      <div class="text-right">
+        <a class="text-current text-sm font-semibold" href="/blog">
+          Más blogs
+        </a>
+      </div>
+    </div>
+    <div class="col-span-9 md:col-span-3">
+      <div class="h-20 flex">
+        <h4 class="uppercase font-bold text-base tracking-wider my-auto">Videos</h4>
+      </div>
+      <div class="border-b-2 border-yellow-500 w-full">
+        <% if (collections['Video']) { %>
+          <% collections['Video'].slice(-4).reverse().forEach((video)=> { %>
+            <a href="<%= video.url %>" class="block mb-4 text-current">
+              <iframe src="<%= video.data.link %>" title="YouTube video player" class="mb-4 rifra" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <p class="text-sm mb-4"><%= video.data.description %></p>
+            </a>
+          <% }) %>
+        <% } %>
+      </div>
+      <div class="text-right">
+        <a class="text-current text-sm font-semibold" href="/video">
+          Más videos
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w-full bg-blue-900">
+  <div class="max-w-screen-lg px-4 md:px-0 mx-auto">
+    <div class="grid grid-cols-9 gap-4 justify-center text-left py-16 text-white">
+      <div class="col-span-9 md:col-span-5">
+        <h2 class="font-bold text-4xl">Suscríbete</h2>
+        <p class="text-lg">
+          Recibe el resumen del proceso de elección del Fiscal General del Ministerio Público de Guatemala. Se envía los viernes.
+        </p>
+      </div>
+      <div class="col-span-9 md:col-span-4">
+        <!-- Begin Mailchimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7_dtp.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+          #mc_embed_signup {
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+          }
+        
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+        	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+          <form action="https://redciudadana.us20.list-manage.com/subscribe/post?u=323879974b6f2597d2319fb63&amp;id=5485ede884"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+            novalidate>
+            <div id="mc_embed_signup_scroll">
+              <h5 class="mb-4">Correo electrónico</h5>
+              <input type="email" value="" name="EMAIL" class="email h-12 mb-4 text-black" id="mce-EMAIL" placeholder="Correo electrónico" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                  name="b_323879974b6f2597d2319fb63_5485ede884" tabindex="-1" value=""></div>
+              <div class="optionalParent">
+                <div class="clear foot">
+                  <input type="submit" value="Suscríbete" name="subscribe" id="mc-embedded-subscribe" class="bg-yellow-400 w-36 h-8 border-yellow-500">
+                  <p class="brandingLogo"><a href="http://eepurl.com/hSLFxP"
+                      title="Mailchimp - email marketing made easy and fun"><img
+                        src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
+  <div class="grid grid-cols-9 gap-4 justify-center text-left py-16">
+    <div class="col-span-9 md:col-span-6">
+      <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Eventos</h4>
+      <div>
+        <% if (collections['Evento']) { %>
+          <% collections['Evento'].slice(-5).reverse().forEach((post)=> { %>
+            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current responsive">
+              <img src="<%= post.data.image %>" alt="Evento" class="w-36">
+              <div class="pl-8 my-auto">
+                <h5 class="font-bold text-lg">
+                  <%= post.data.title %>
+                </h5>
+                <span class="text-sm">
+                  <%= post.data.description %>
+                </span>
+              </div>
+            </a>
+            <% }) %>
+          <% } %>
+      </div>
+      <div class="text-right">
+        <a class="text-current text-sm font-semibold" href="/eventos">
+          Más eventos
+        </a>
+      </div>
+    </div>
+    <div class="col-span-9 md:col-span-3">
+      <div class="h-20 flex border-b-2 border-yellow-500">
+        <h4 class="uppercase font-bold text-base tracking-wider my-auto">Podcast</h4>
+      </div>
+      <div class="w-full">
+        <% if (collections['Podcast']) { %>
+          <% collections['Podcast'].slice(-4).reverse().forEach((podcast)=> { %>
+            <div class="block mb-4">
+              <iframe src="<%= podcast.data.link %>" width="100%"
+                height="152" frameBorder="0" allowfullscreen="" class="rifra"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+          <% }) %>
+        <% } %>
+      </div>
+      <div class="text-right">
+        <a class="text-current text-sm font-semibold" href="/podcast">
+          Más podcast
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
