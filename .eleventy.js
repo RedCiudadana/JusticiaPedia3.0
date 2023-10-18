@@ -82,5 +82,11 @@ module.exports = function (eleventyConfig) {
             return item.data.perfiles.election !== 0;
         });
     });
+
+    eleventyConfig.addCollection('newsHighlighted', (collectionApi) => {
+        return collectionApi.getFilteredByTag('novedades').filter((item) => {
+            return item.data.highlight == true;
+        });
+    });
     
 }
