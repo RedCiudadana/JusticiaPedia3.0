@@ -1,6 +1,6 @@
 ---
 title: Candidaturas rechazadas en primera revisión de la Comisión
-image: /images/posts/justiciapedia_02-09.png
+image: /images/posts/imagenes-mp-07.png
 description: La Comisión de Postulación terminó la primera fase de depuración de
   expedientes la última semana de febrero.
 tipo_eleccion: EleccionMP
