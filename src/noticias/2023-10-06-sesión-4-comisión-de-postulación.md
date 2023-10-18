@@ -1,6 +1,6 @@
 ---
 title: "Sesión 4: Comisión de Postulación"
-image: /images/posts/justiciapedia_02-09.png
+image: /images/posts/imagenes-mp-07.png
 description: Comisión de Postulación Fiscal General y Jefe del Ministerio Público
 tipo_eleccion: EleccionMP
 autor: Comisión de Postulación a Fiscal General y Jefe del Ministerio Público
