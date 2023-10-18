@@ -1,6 +1,6 @@
 ---
 title: "Sesión 3: Comisión de Postulación"
-image: /images/posts/justiciapedia_02-09.png
+image: /images/posts/imagenes-mp-10.png
 description: "La tercera sesión concluye el diseño y aprobación de los
   instrumentos a utilizar por la Comisión de Postulación en el proceso de
   creación de nómina para el Presidente de la República. En esta sesión se
