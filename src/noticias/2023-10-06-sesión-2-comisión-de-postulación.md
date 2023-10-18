@@ -1,6 +1,6 @@
 ---
 title: "Sesión 2: Comisión de Postulación"
-image: /images/posts/justiciapedia_02-09.png
+image: /images/posts/imagenes-mp-09.png
 description: "La segunda sesión se realizó en la sede de la Comisión y
   complementa el trabajo de la primera sesión para la discusión y aprobación del
   perfil de aspirante a Fiscal General y Jefe del Ministerio Público y la
