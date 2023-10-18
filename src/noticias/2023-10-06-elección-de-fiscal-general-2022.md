@@ -1,6 +1,6 @@
 ---
 title: Elección de Fiscal General 2022
-image: /images/posts/justiciapedia_02-09.png
+image: /images/posts/imagenes-mp-10.png
 description: La elección del Fiscal General ha tomado nuevas direcciones tras
   diversas reformas dentro del sector justicia y eventos dentro de la justicia
   penal que han trascendido al ámbito nacional.
