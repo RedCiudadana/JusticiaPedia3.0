@@ -1,6 +1,6 @@
 ---
 title: Comisión de Postulación excluye aspirantes del proceso.
-image: /images/posts/justiciapedia_02-09.png
+image: /images/posts/imagenes-mp-08.png
 description: 15 candidatos continúan en el proceso de elección del Ministerio
   Público 2022-2022
 tipo_eleccion: EleccionMP
