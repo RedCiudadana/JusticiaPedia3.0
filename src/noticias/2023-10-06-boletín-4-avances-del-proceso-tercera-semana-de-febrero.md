@@ -1,6 +1,6 @@
 ---
 title: Listado de candidaturas para Fiscal General 2022-2026
-image: /images/posts/justiciapedia_02-09.png
+image: /images/posts/imagenes-mp-10.png
 description: "En total se presentaron 26 expedientes de postulantes para Fiscal
   General y Jefe del Ministerio Público, de los cuales 9 son mujeres y 17
   hombres. "
