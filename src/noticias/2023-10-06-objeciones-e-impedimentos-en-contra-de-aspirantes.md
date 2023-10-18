@@ -1,6 +1,6 @@
 ---
 title: Objeciones e impedimentos en contra de aspirantes
-image: /images/posts/justiciapedia_02-09.png
+image: /images/posts/imagenes-mp-07.png
 description: El proceso de elección de Fiscal General 2022-2026 continúa y se
   encuentra en una de las fases más importantes, la presentación de objeciones o
   impedimentos en contra de aspirantes.
