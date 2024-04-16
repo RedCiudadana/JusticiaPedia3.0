@@ -6,185 +6,28 @@ permalink: "404.html"
 
 {% block head %}
 <title>JusticiaPedia | Red Ciudadana</title>
-
 {% endblock %}
 
 {% block content %}
 
-		<div class="popup2">
-			<button id="close2">&times;</button>
-			<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FRedciudadanagt%2Fvideos%2F203353792644070%2F&show_text=false&width=560&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-		</div>
+        <!-- features-area-start -->
+        <div class="features-02-area pb-90 pt-50" style="background-color: #e2e6ec;">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-xl-10 col-lg-10 mx-auto" style="text-align: center;">
+                        <img class="mx-auto" src="/elementos/404-02.png">
+                        <h1 class="text-titles">Oops!</h1>
+                        <br>
+                        <p style="color: #010001!important;">La página que buscas no se encuentra disponible. <br> Revisa el URL o vuelve a la pagina de inicio.</p>
+                        <a class="btn" href="/index.html">Regresar al Inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<!-- Content
-		============================================= -->
-		<section id="content px-4">
-			<div class="content-wrap">
-
-				<!-- Novedades
-				============================================= -->
-
-				<div class="section m-0 pt-4 pb-2" style="background-color: #f1f5fb">
-					<div class="container">
-						<div class="row">
-
-							<div class="col-lg-8 col-sm-12 order-1 order-lg-2 my-4">
-								{% for novedad in collections.newsHighlighted | reverse | limit(1)%}
-								<div class="novedad_principal mb-4">
-									<img src="{{novedad.data.image}}">
-									<!--h4>Destacado</h4-->
-									<a href="{{novedad.url}}"><h1>{{novedad.data.title}}</h1></a>
-									<p>{{novedad.data.description}}</p>
-									<i style="color:#e0a892">Escrito por: &nbsp{{novedad.data.autor}}</i>
-								</div>
-								{% endfor%}
-							</div>
-							<div class="col-lg-4 col-sm-12 order-3 order-lg-3 my-4">
-								{% for novedad in collections.newsHighlighted | reverse | limitPart(1,2) %}
-								<div class="novedad_secundaria_lateral mb-4">
-									<img src="{{novedad.data.image}}">
-									<a href="{{novedad.url}}"><h1 style="height: 25px">{{novedad.data.title}}</h1></a>
-									<p>{{novedad.data.description}}</p>
-									<i style="color:#e0a892">Escrito por: &nbsp{{novedad.data.autor}}</i>
-								</div>
-								{% endfor%}
-								{% for novedad in collections.newsHighlighted | reverse | limitPart(2,3) %}
-								<div class="novedad_terciaria_lateral mt-4 mb-4">
-									<a href="{{novedad.url}}"><h1 style="height: 25px">{{novedad.data.title}}</h1></a>
-									<p>{{novedad.data.description}}</p>
-									<i style="color:#e0a892">Escrito por: &nbsp{{novedad.data.autor}}</i>
-								</div>
-								{% endfor%}
-
-							</div>
-							
-							
-						</div>
-					</div>
-				</div>
-
-				<!-- CAMBIAR A VIDEO -->
-
-				<div class="section py-4 m-0" style="background-color: #4c5761">
-					
-
-					<div class="container">
-						<div class="row align-items-center col-mb-50">
-			
-							<div class="col-lg-6">
-								<h3 class="titulo-podcast">¿Qué es Justiciapedia?</h3>
-								<p class="texto-podcast">Es una herramienta interactiva y sencilla que busca acercar a la ciudadanía con el sector justicia, hacer que sea comprensible un tema que nos debe interesar a todos y todas.</p>
-							</div>
-
-							<div class="col-lg-6">
-								<iframe style="width:100%;height:300px!important" src="https://www.youtube.com/embed/36Al4aseSTw?si=6xs8Gl6xTIvh0g3u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-							</div>
-
-						</div>
-					</div>
-
-
-				</div>
-
-				<!-- Especiales
-				============================================= -->
-
-				<div class="section m-0 py-2" style="background-color: #fff">
-					<div class="container">
-						<div class="row py-6">
-							<h2 class="font-bold text-4xl mb-4 pb-4" style="text-align:left;margin:1rem 0">Funcionalidades</h2>
-
-							<div class="col-lg-6 px-4">
-								<a href="/sectorjusticia/1/index.html">
-									<div class="row cuadro_pre_especiales">
-										<div class="col-lg-2">
-											<img class="" src="/elementos/ICONOS/JUSTICIAPEDIA_02-10.png">
-										</div>
-										<div class="col-lg-10">
-											<h4 class="titulo_pre_especiales">Sector Justicia</h4>
-											<p class="texto_pre_especiales">Conoce la información sobre las instituciones, organismos y entidades que forman parte de este sector.</p>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="col-lg-6 px-4">
-								<a  href="/comisiones/1/index.html">
-									<div class="row cuadro_pre_especiales">
-										<div class="col-lg-2">
-											<img class="" src="/elementos/ICONOS/JUSTICIAPEDIA_02-11.png">
-										</div>
-										<div class="col-lg-10">
-											<h4 class="titulo_pre_especiales">Comisiones de Postulación</h4>
-											<p class="texto_pre_especiales">Conoce el proceso de selección de aspirantes para cargos judiciales y otros roles importantes dentro del sistema de justicia.</p>
-										</div>
-									</div>
-								</a>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-
-				<!-- Noticias y Videos
-				============================================= -->
-
-				<div class="section py-6 mb-0 mt-0" style="background-color: #f1f5fb">
-					
-					<div class="container">
-						<div class="row col-mb-50">
-								
-							<div class="col-lg-9 col-sm-12">
-								<h2 class="font-bold text-4xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Lo último</h2>
-								{% for novedad in collections.novedades | reverse | limit(5) %}
-					
-				
-								<a href="{{novedad.url}}" class="flex border-b-2 pb-4 mb-4 text-current responsive">
-								<img src="{{ novedad.data.image }}" alt="novedad" class="w-48 h-100">
-								<div class="pl-8 my-auto" style="text-align:left">
-									<h5 class="font-bold text-lg">
-									{{novedad.data.title }}
-									</h5>
-									<span class="text-sm">
-									{{novedad.data.date | dateFormat('DD/MM/YYYY')}}
-									</span><br>
-									<span class="text-sm">
-									{{novedad.data.description}}
-									</span>
-								</div>
-								</a>
-
-								{% endfor %}
-								<div class="mb-6" style="display:flex; justify-content:flex-end">
-									<a href="/novedades/index.html">Más Novedades<i class="icon-arrow-right" style="margin-left:5px"></i></a>
-								</div>	
-							</div>	
-							<div class="col-lg-3 col-sm-12">
-								<h2 class="font-bold text-3xl border-b-2 border-blue-500 mb-4 pb-4" style="text-align:left;margin:1rem 0">Videos</h2>
-								{% for video in collections.videos | reverse | limit(4)%}
-								<div class="entry ">
-									<div class="grid-inner">
-										{{video.data.link | safe}}
-										<p class="txt-video">{{video.data.description}}</p>
-									</div>
-									
-								</div>
-								{% endfor %}
-								<div class="mb-6">
-									<div style="display:flex; justify-content:flex-end">
-									<a href="/videos/index.html">Más Videos<i class="icon-arrow-right" style="margin-left:5px"></i></a>
-								</div>
-							</div>	
-						</div>	
-						
-
-					</div>	
-				</div>
-			</div>
-
-		</section><!-- #content end -->
 {% endblock %}
 
 {% block body_javascripts %}
-	
+
 {% endblock %}
