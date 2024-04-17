@@ -1,5 +1,5 @@
 ---
-title: EleccionCC
+title: EleccionCortes
 enlace: https://justicia-abierta.org/assets/uploads/proyectos-red-11.png
 descripcion: >-
   Al igual que el proyecto EleccionMP, la iniciativa EleccionCortes se dedica al
