@@ -21,7 +21,7 @@ permalink: "especiales/eleccioncortes/index.html"
 					<div class="container pb-2">
 						<div class="row">
                             <div class="col-lg-6 my-4 py-6 px-6">
-                                <img src="/elementos/eleccion_cortes/ELECCION DE CORTES-08.png">
+                                <img src="/elementos/eleccion_cortes/ec-08.png">
                             </div>
 							<div class="col-lg-6 my-4 py-6">
                                 <h1 class="font-weight-600 mb-4" style="color: #fff!important;font-size: 45px;line-height: 40px;">Elección de Cortes 2024
@@ -223,7 +223,7 @@ permalink: "especiales/eleccioncortes/index.html"
                                 <h1 style="font-size:30px">Lo Último</h1>
                             </div>
                         </div>
-                        {% for novedad in collections.novedades | reverse | filtrarPorEleccionBlogs("EleccionMP") | limit(1) %}
+                        {% for novedad in collections.novedades | reverse | filtrarPorEleccionBlogs("EleccionCortes") | limit(1) %}
                         <div class="row">
                             <div class="col-lg-6">
                                 <img src="{{ novedad.data.image }}" alt="novedad" class="h-100">
