@@ -20293,6 +20293,19 @@ b{
   color: #fff!important;
 }
 
+.btn_especiales2{
+  background-color: #747473;
+  color: #fff!important;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: 0.5s;
+}
+
+.btn_especiales2:hover{
+  background-color: #293c4c;
+  color: #fff!important;
+}
+
 .img_especial{
   position: absolute; 
   right: 0; 
