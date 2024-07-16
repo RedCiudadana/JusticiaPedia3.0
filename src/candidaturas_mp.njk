@@ -1,0 +1,50 @@
+---
+pagination:
+  data: collections.filteredmp
+  size: 1
+  alias: filteredmp
+  addAllPagesToCollections: true
+permalink: "candidaturas_mp/index.html"
+---
+
+{% extends "src/base2.njk" %}
+
+{% block head %}
+<title>Candidaturas del MP | JusticiaPedia</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block content %}
+ 
+{% for item in collections.filteredmp %}
+    <div class="row">
+        <div class="col-lg-12 my-4 py-4 background-perfiles">
+            <div class="row">
+                {% for perfil in collections.perfiles | filtrarPorEleccion(item.data.comisiones.id) %}
+                <div class="col-lg-3 col-sm-12 order-2 order-lg-1 text-center my-2">
+
+                <div class="cuadro_perfil h-100">
+                    <div class="imagen-container">
+                    {% if perfil.data.perfiles.fotoURL %}
+                    <img class="imagen-principal" src="{{perfil.data.perfiles.fotoURL}}" alt="Imagen Principal" />
+                    <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" style="display: none;" />
+                    {% else %}
+                    <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+                    {% endif %}
+                    </div>
+
+                    <div class="p-4">
+                    <h1 class="my-2">{{perfil.data.perfiles.nombre}}</h1>
+                    <a href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug}}/index.html" class="btn btn2">Más Información<a>
+                    </div>
+                </div>
+        
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+                    
+{% endfor %}
+
+{% endblock %}

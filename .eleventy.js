@@ -32,6 +32,13 @@ module.exports = function (eleventyConfig) {
         return variable;
     });
 
+    eleventyConfig.addCollection("filteredmp", function(collection) {
+        return collection.getFilteredByTags("comisiones").filter(function(item) {
+            return item.data.comisiones && 
+                   item.data.comisiones.id === "election-2";
+        });
+    }); 
+
     eleventyConfig.addFilter("filtrarPorEleccionBlogs", function(coleccion, election) {
         if (!coleccion || !election) {
             return [];
