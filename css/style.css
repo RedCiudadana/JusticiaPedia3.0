@@ -10183,6 +10183,19 @@ td.actions {
   background: #91c0db;
 }
 
+.btn4{
+  background: rgba(251,191,36);
+}
+
+.btn4:hover{
+  background: rgba(141,190,218)!important;
+}
+
+.btn4::before{
+  background: rgba(141,190,218)!important;
+  border: 1px solid rgba(141,190,218)!important;
+}
+
 .btn:hover {
   color: #fff!important; }
 

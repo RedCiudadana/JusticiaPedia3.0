@@ -17,7 +17,7 @@ permalink: "candidaturas_mp/index.html"
 {% block content %}
  
 {% for item in collections.filteredmp %}
-    <div class="row" style="padding: 0 10%;">
+    <div class="row" style="padding: 0 15%; background-color: #f0f3f9 ;">
         <div class="col-lg-12 my-4 py-4">
             <div class="row">
                 {% for perfil in collections.perfiles | filtrarPorEleccion(item.data.comisiones.id) %}
@@ -35,7 +35,7 @@ permalink: "candidaturas_mp/index.html"
 
                     <div class="p-4">
                     <h1 class="my-2">{{perfil.data.perfiles.nombre}}</h1>
-                    <a href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug}}/index.html" class="btn btn2">Más Información<a>
+                    <a target="_blank" href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug}}/index.html" class="btn btn4">Más Información<a>
                     </div>
                 </div>
         
