@@ -4392,6 +4392,10 @@ html[xmlns] .slider-wrap {
   display: none;
 }
 
+.retina-logo{
+  height: 68px;
+}
+
 @media (min-width: 992px) {
   .full-header #logo {
     padding-right: 30px;
