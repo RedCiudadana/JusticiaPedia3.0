@@ -81,13 +81,13 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addCollection('perfiles_comisionados', (collectionApi) => {
         return collectionApi.getFilteredByTag('perfiles').filter((item) => {
-            return item.data.perfiles.comission !== 0;
+            return item.data.perfiles.election !== 0;
         });
     });
 
     eleventyConfig.addCollection('perfiles_candidatos', (collectionApi) => {
         return collectionApi.getFilteredByTag('perfiles').filter((item) => {
-            return item.data.perfiles.election !== 0;
+            return item.data.perfiles.institution !== 0;
         });
     });
 
