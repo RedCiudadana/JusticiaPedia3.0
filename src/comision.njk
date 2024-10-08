@@ -40,9 +40,9 @@ tags:
                 <div class="col-lg-2-5 mr-2">
                   <button class="tablinks h-100" onclick="openTab(event, 'autoridades')"><img src="/elementos/ICONOS/ICONOS/12.png">Comisionados</button>
                 </div>
-                <div class="col-lg-2-5 mr-2">
+                <!-- <div class="col-lg-2-5 mr-2">
                   <button class="tablinks h-100" onclick="openTab(event, 'comisiones')"><img src="/elementos/ICONOS/ICONOS/13.png">Candidaturas</button>
-                </div>
+                </div> -->
                 <div class="col-lg-3 m-auto p-2" style="text-align:end">
                   {% if comisiones.tw %}
                   <a href="{{comisiones.tw}}" class="btn-twitter"><i class="fa-brands fa-twitter"></i>Tweet</a>
@@ -141,7 +141,11 @@ tags:
                           <img class="imagen-principal" src="{{perfil.data.perfiles.fotoURL}}" alt="Imagen Principal" />
                           <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" style="display: none;" />
                           {% else %}
-                          <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+                              {% if perfil.data.perfiles.sexo === "Masculino" %}
+                              <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+                              {% else%}
+                              <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-22.png" alt="Imagen de Respaldo" />
+                              {% endif %}
                           {% endif %}
                         </div>
 
@@ -169,7 +173,11 @@ tags:
                           <img class="imagen-principal" src="{{perfil.data.perfiles.fotoURL}}" alt="Imagen Principal" />
                           <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" style="display: none;" />
                           {% else %}
-                          <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+                              {% if perfil.data.perfiles.sexo === "Masculino" %}
+                              <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+                              {% else%}
+                              <img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-22.png" alt="Imagen de Respaldo" />
+                              {% endif %}
                           {% endif %}
                         </div>
 

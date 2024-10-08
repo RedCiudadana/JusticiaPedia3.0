@@ -75,19 +75,19 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addCollection('perfiles_institucionales', (collectionApi) => {
         return collectionApi.getFilteredByTag('perfiles').filter((item) => {
-            return item.data.perfiles.institution !== 0;
+            return item.data.perfiles && 'institution' in item.data.perfiles;
         });
     });
 
     eleventyConfig.addCollection('perfiles_comisionados', (collectionApi) => {
         return collectionApi.getFilteredByTag('perfiles').filter((item) => {
-            return item.data.perfiles.election !== 0;
+            return item.data.perfiles && 'comission' in item.data.perfiles;
         });
     });
 
     eleventyConfig.addCollection('perfiles_candidatos', (collectionApi) => {
         return collectionApi.getFilteredByTag('perfiles').filter((item) => {
-            return item.data.perfiles.institution !== 0;
+            return item.data.perfiles && 'election' in item.data.perfiles;
         });
     });
 

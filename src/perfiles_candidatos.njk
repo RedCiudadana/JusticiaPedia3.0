@@ -59,14 +59,18 @@ permalink: "perfiles_candidaturas/index.html"
 
 							{% for perfil in collections.perfiles_candidatos %}
 
-							<div class="col-lg-3 col-sm-12 order-2 order-lg-1 text-center my-2 cuadro_perfil_sup"  data-institution="{{perfil.data.perfiles.institution}}">
+							<div class="col-lg-3 col-sm-12 order-2 order-lg-1 text-center my-2 cuadro_perfil_sup"  data-institution="{{perfil.data.perfiles.election}}">
 
 								<div class="cuadro_perfil h-100">
                                     {% if perfil.data.perfiles.fotoURL %}
 									<img src="{{perfil.data.perfiles.fotoURL}}">
                                     {% else %}
-                                    <img src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png">
-                                    {% endif %}
+										{% if perfil.data.perfiles.sexo === "Masculino" %}
+										<img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-21.png" alt="Imagen de Respaldo" />
+										{% else%}
+										<img class="imagen-respaldo" src="/elementos/ICONOS/JUSTICIAPEDIA_02-22.png" alt="Imagen de Respaldo" />
+										{% endif %}
+									{% endif %}
 									<div class="p-4">
 										<h1 class="my-2" style="height:50px">{{perfil.data.perfiles.nombre}}</h1>
 										<a href="/perfiles/{{perfil.data.perfiles.id}}/{{perfil.data.perfiles.nombre | slug | safe}}/index.html" class="btn btn2">Más Información<a>
